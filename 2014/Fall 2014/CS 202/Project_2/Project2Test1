@@ -1,0 +1,399 @@
+Script started on Thu 11 Sep 2014 01:31:33 PM PDT
+]0;patrick@patrick-VirtualBox: ~/Desktop/Project_2patrick@patrick-VirtualBox:~/Desktop/Project_2$ g++ project2.cpp -o project2
+]0;patrick@patrick-VirtualBox: ~/Desktop/Project_2patrick@patrick-VirtualBox:~/Desktop/Project_2$ ./project2
+Welcome to the CS 202 card game program.
+
+Select an option:
+
+1. Display unshuffled cards
+2. Shuffle cards
+3. Write shuffled cards to file
+4. Deal cards
+5. Quit card game program
+
+Enter your selection: 1
+
+heart two heart three heart four heart five heart six heart seven heart eight heart nine heart ten heart jack heart queen heart king heart ace 
+diamond two diamond three diamond four diamond five diamond six diamond seven diamond eight diamond nine diamond ten diamond jack diamond queen diamond king diamond ace 
+club two club three club four club five club six club seven club eight club nine club ten club jack club queen club king club ace 
+spade two spade three spade four spade five spade six spade seven spade eight spade nine spade ten spade jack spade queen spade king spade ace 
+
+Returning to main menu... 
+
+Select an option:
+
+1. Display unshuffled cards
+2. Shuffle cards
+3. Write shuffled cards to file
+4. Deal cards
+5. Quit card game program
+
+Enter your selection: 2
+
+The cards have been shuffled. Returning to main menu... 
+
+Select an option:
+
+1. Display unshuffled cards
+2. Shuffle cards
+3. Write shuffled cards to file
+4. Deal cards
+5. Quit card game program
+
+Enter your selection: 2
+
+The cards have been shuffled. Returning to main menu... 
+
+Select an option:
+
+1. Display unshuffled cards
+2. Shuffle cards
+3. Write shuffled cards to file
+4. Deal cards
+5. Quit card game program
+
+Enter your selection: 3
+
+The cards have been printed to shuffled_cards.txt. Returning to main menu... 
+
+Select an option:
+
+1. Display unshuffled cards
+2. Shuffle cards
+3. Write shuffled cards to file
+4. Deal cards
+5. Quit card game program
+
+Enter your selection: 4
+
+Patrick Austin has been dealt: heart seven, heart four, and heart jack.
+The value of his/her starting hand is: 21.
+
+Nancy LaTourrette has been dealt: spade queen, heart queen, and club nine.
+The value of his/her starting hand is: 29.
+
+Sam Tregillus has been dealt: diamond six, club three, and heart five.
+The value of his/her starting hand is: 14.
+
+Prasun Dey has been dealt: club king, diamond four, and club four.
+The value of his/her starting hand is: 18.
+
+The card heart six has been placed in the discard pile. The remaining cards have been placed in the stock pile.
+
+To see complete game state diagnostic information, press 1. To return to the main menu, press any other key: 1
+
+Player 1 information:
+
+The player's name is: Patrick Austin
+
+Card 1 info:
+The card suit is     : heart
+The card rank is     : seven
+The card value is    : 7
+The card location is : Patrick Austin
+
+Card 2 info:
+The card suit is     : heart
+The card rank is     : four
+The card value is    : 4
+The card location is : Patrick Austin
+
+Card 3 info:
+The card suit is     : heart
+The card rank is     : jack
+The card value is    : 10
+The card location is : Patrick Austin
+
+The player's total score is: 21
+
+Player 2 information:
+
+The player's name is: Nancy LaTourrette
+
+Card 1 info:
+The card suit is     : spade
+The card rank is     : queen
+The card value is    : 10
+The card location is : Nancy LaTourrette
+
+Card 2 info:
+The card suit is     : heart
+The card rank is     : queen
+The card value is    : 10
+The card location is : Nancy LaTourrette
+
+Card 3 info:
+The card suit is     : club
+The card rank is     : nine
+The card value is    : 9
+The card location is : Nancy LaTourrette
+
+The player's total score is: 29
+
+Player 3 information:
+
+The player's name is: Sam Tregillus
+
+Card 1 info:
+The card suit is     : diamond
+The card rank is     : six
+The card value is    : 6
+The card location is : Sam Tregillus
+
+Card 2 info:
+The card suit is     : club
+The card rank is     : three
+The card value is    : 3
+The card location is : Sam Tregillus
+
+Card 3 info:
+The card suit is     : heart
+The card rank is     : five
+The card value is    : 5
+The card location is : Sam Tregillus
+
+The player's total score is: 14
+
+Player 4 information:
+
+The player's name is: Prasun Dey
+
+Card 1 info:
+The card suit is     : club
+The card rank is     : king
+The card value is    : 10
+The card location is : Prasun Dey
+
+Card 2 info:
+The card suit is     : diamond
+The card rank is     : four
+The card value is    : 4
+The card location is : Prasun Dey
+
+Card 3 info:
+The card suit is     : club
+The card rank is     : four
+The card value is    : 4
+The card location is : Prasun Dey
+
+The player's total score is: 18
+
+The discard pile contains: 
+
+The card suit is     : heart
+The card rank is     : six
+The card value is    : 6
+The card location is : discard
+
+The stock pile contains: 
+
+The card suit is     : club
+The card rank is     : ten
+The card value is    : 10
+The card location is : stock
+
+The card suit is     : spade
+The card rank is     : nine
+The card value is    : 9
+The card location is : stock
+
+The card suit is     : club
+The card rank is     : five
+The card value is    : 5
+The card location is : stock
+
+The card suit is     : spade
+The card rank is     : ten
+The card value is    : 10
+The card location is : stock
+
+The card suit is     : diamond
+The card rank is     : queen
+The card value is    : 10
+The card location is : stock
+
+The card suit is     : club
+The card rank is     : seven
+The card value is    : 7
+The card location is : stock
+
+The card suit is     : heart
+The card rank is     : nine
+The card value is    : 9
+The card location is : stock
+
+The card suit is     : spade
+The card rank is     : five
+The card value is    : 5
+The card location is : stock
+
+The card suit is     : spade
+The card rank is     : six
+The card value is    : 6
+The card location is : stock
+
+The card suit is     : heart
+The card rank is     : ten
+The card value is    : 10
+The card location is : stock
+
+The card suit is     : heart
+The card rank is     : king
+The card value is    : 10
+The card location is : stock
+
+The card suit is     : spade
+The card rank is     : three
+The card value is    : 3
+The card location is : stock
+
+The card suit is     : heart
+The card rank is     : eight
+The card value is    : 8
+The card location is : stock
+
+The card suit is     : diamond
+The card rank is     : seven
+The card value is    : 7
+The card location is : stock
+
+The card suit is     : diamond
+The card rank is     : two
+The card value is    : 2
+The card location is : stock
+
+The card suit is     : club
+The card rank is     : two
+The card value is    : 2
+The card location is : stock
+
+The card suit is     : spade
+The card rank is     : eight
+The card value is    : 8
+The card location is : stock
+
+The card suit is     : diamond
+The card rank is     : ten
+The card value is    : 10
+The card location is : stock
+
+The card suit is     : spade
+The card rank is     : jack
+The card value is    : 10
+The card location is : stock
+
+The card suit is     : diamond
+The card rank is     : five
+The card value is    : 5
+The card location is : stock
+
+The card suit is     : spade
+The card rank is     : king
+The card value is    : 10
+The card location is : stock
+
+The card suit is     : spade
+The card rank is     : seven
+The card value is    : 7
+The card location is : stock
+
+The card suit is     : diamond
+The card rank is     : king
+The card value is    : 10
+The card location is : stock
+
+The card suit is     : diamond
+The card rank is     : jack
+The card value is    : 10
+The card location is : stock
+
+The card suit is     : diamond
+The card rank is     : three
+The card value is    : 3
+The card location is : stock
+
+The card suit is     : spade
+The card rank is     : ace
+The card value is    : 11
+The card location is : stock
+
+The card suit is     : diamond
+The card rank is     : nine
+The card value is    : 9
+The card location is : stock
+
+The card suit is     : heart
+The card rank is     : two
+The card value is    : 2
+The card location is : stock
+
+The card suit is     : club
+The card rank is     : jack
+The card value is    : 10
+The card location is : stock
+
+The card suit is     : heart
+The card rank is     : ace
+The card value is    : 11
+The card location is : stock
+
+The card suit is     : club
+The card rank is     : eight
+The card value is    : 8
+The card location is : stock
+
+The card suit is     : club
+The card rank is     : ace
+The card value is    : 11
+The card location is : stock
+
+The card suit is     : heart
+The card rank is     : three
+The card value is    : 3
+The card location is : stock
+
+The card suit is     : club
+The card rank is     : six
+The card value is    : 6
+The card location is : stock
+
+The card suit is     : diamond
+The card rank is     : eight
+The card value is    : 8
+The card location is : stock
+
+The card suit is     : spade
+The card rank is     : two
+The card value is    : 2
+The card location is : stock
+
+The card suit is     : diamond
+The card rank is     : ace
+The card value is    : 11
+The card location is : stock
+
+The card suit is     : spade
+The card rank is     : four
+The card value is    : 4
+The card location is : stock
+
+The card suit is     : club
+The card rank is     : queen
+The card value is    : 10
+The card location is : stock
+
+Returning to main menu... 
+
+Select an option:
+
+1. Display unshuffled cards
+2. Shuffle cards
+3. Write shuffled cards to file
+4. Deal cards
+5. Quit card game program
+
+Enter your selection: 5
+
+Thank you for using the card game program. Press any key to quit: aa 
+]0;patrick@patrick-VirtualBox: ~/Desktop/Project_2patrick@patrick-VirtualBox:~/Desktop/Project_2$ exit
+Script done on Thu 11 Sep 2014 01:32:12 PM PDT

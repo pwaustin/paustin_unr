@@ -1,0 +1,15 @@
+Alpha,	Bravo
+Alpha,	Charlie
+Bravo,	Delta
+Bravo,	Hotel
+Charlie,	Bravo
+Charlie,	Delta
+Charlie,	Echo
+Delta,	Hotel
+Delta,	Foxtrot
+Echo,	India
+Foxtrot,	India
+Foxtrot,	Golf
+Golf,	Charlie
+Hotel,	Golf
+India,	Charlie

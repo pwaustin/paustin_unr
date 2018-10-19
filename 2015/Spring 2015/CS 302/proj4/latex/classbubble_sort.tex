@@ -1,0 +1,161 @@
+\hypertarget{classbubble_sort}{\section{bubble\-Sort Class Reference}
+\label{classbubble_sort}\index{bubble\-Sort@{bubble\-Sort}}
+}
+
+
+{\ttfamily \#include $<$sorts.\-h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classbubble_sort_a1c27ea0fc09053fd31f3d0c10c9fe4f1}{bubble\-Sort} ()
+\item 
+void \hyperlink{classbubble_sort_ad85ec9495537d60aaeff8c6b5c4daee5}{sort} (const int \&)
+\item 
+void \hyperlink{classbubble_sort_a61400f0d900ebc3927b2447eeb61d5bc}{bubble\-Up} (const int \&, const int \&, bool \&)
+\item 
+void \hyperlink{classbubble_sort_a463cf03cf991f57da8b0c9510ce3a74b}{readin} (const int \&)
+\item 
+double \hyperlink{classbubble_sort_abbf0758af12efdcb9963dfd4fbc78658}{get\-Time} () const 
+\item 
+int \hyperlink{classbubble_sort_af768b08b1b5c1d33ebc5214fcc349b2c}{get\-Comparisons} () const 
+\item 
+int \hyperlink{classbubble_sort_a609c024f39fc24118e6b3208893cc541}{get\-Swaps} () const 
+\item 
+void \hyperlink{classbubble_sort_ad4b151430666650dbbb6b85e8ff933a1}{reset\-Counts} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classbubble_sort_a1c27ea0fc09053fd31f3d0c10c9fe4f1}{\index{bubble\-Sort@{bubble\-Sort}!bubble\-Sort@{bubble\-Sort}}
+\index{bubble\-Sort@{bubble\-Sort}!bubbleSort@{bubble\-Sort}}
+\subsubsection[{bubble\-Sort}]{\setlength{\rightskip}{0pt plus 5cm}bubble\-Sort\-::bubble\-Sort (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classbubble_sort_a1c27ea0fc09053fd31f3d0c10c9fe4f1}
+Bubble sort class constructor. Initializes count and time analysis values to 0. \begin{DoxyPrecond}{Precondition}
+None. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Object created with time, comparisons, swaps = 0 
+\end{DoxyPostcond}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classbubble_sort_a61400f0d900ebc3927b2447eeb61d5bc}{\index{bubble\-Sort@{bubble\-Sort}!bubble\-Up@{bubble\-Up}}
+\index{bubble\-Up@{bubble\-Up}!bubbleSort@{bubble\-Sort}}
+\subsubsection[{bubble\-Up}]{\setlength{\rightskip}{0pt plus 5cm}void bubble\-Sort\-::bubble\-Up (
+\begin{DoxyParamCaption}
+\item[{const int \&}]{start\-Index, }
+\item[{const int \&}]{end\-Index, }
+\item[{bool \&}]{sorted}
+\end{DoxyParamCaption}
+)}}\label{classbubble_sort_a61400f0d900ebc3927b2447eeb61d5bc}
+\hyperlink{classbubble_sort}{bubble\-Sort} bubble\-Up function. Called by the sort function to loop through the array, conducting comparisons and swaps as needed. Tracks comparisons and swaps, as specified in the prompt. !!! A\-D\-A\-P\-T\-E\-D F\-R\-O\-M P\-O\-W\-E\-R\-P\-O\-I\-N\-T S\-L\-I\-D\-E C\-O\-D\-E !!! \begin{DoxyPrecond}{Precondition}
+Comparable data between start\-Index and end\-Index. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+One 'bubble up' completed, if possible. 
+\end{DoxyPostcond}
+
+\begin{DoxyParams}{Parameters}
+{\em start\-Index} & The first value to be compared. \\
+\hline
+{\em end\-Index} & The last value to be compared.  sorted Bool used in internal bubble sort operations to help the sort terminate early if possible. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classbubble_sort_af768b08b1b5c1d33ebc5214fcc349b2c}{\index{bubble\-Sort@{bubble\-Sort}!get\-Comparisons@{get\-Comparisons}}
+\index{get\-Comparisons@{get\-Comparisons}!bubbleSort@{bubble\-Sort}}
+\subsubsection[{get\-Comparisons}]{\setlength{\rightskip}{0pt plus 5cm}int bubble\-Sort\-::get\-Comparisons (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classbubble_sort_af768b08b1b5c1d33ebc5214fcc349b2c}
+Bubble sort get\-Comparisons function. Returns comparisons data member, tracking number of comparisons carried out during sorting. \begin{DoxyPrecond}{Precondition}
+None. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Comparisons returned; value unchanged. 
+\end{DoxyPostcond}
+\hypertarget{classbubble_sort_a609c024f39fc24118e6b3208893cc541}{\index{bubble\-Sort@{bubble\-Sort}!get\-Swaps@{get\-Swaps}}
+\index{get\-Swaps@{get\-Swaps}!bubbleSort@{bubble\-Sort}}
+\subsubsection[{get\-Swaps}]{\setlength{\rightskip}{0pt plus 5cm}int bubble\-Sort\-::get\-Swaps (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classbubble_sort_a609c024f39fc24118e6b3208893cc541}
+Bubble sort get\-Swaps function. Returns swaps data member, tracking number of swaps carried out during sorting. \begin{DoxyPrecond}{Precondition}
+None. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Swaps returned; value unchanged. 
+\end{DoxyPostcond}
+\hypertarget{classbubble_sort_abbf0758af12efdcb9963dfd4fbc78658}{\index{bubble\-Sort@{bubble\-Sort}!get\-Time@{get\-Time}}
+\index{get\-Time@{get\-Time}!bubbleSort@{bubble\-Sort}}
+\subsubsection[{get\-Time}]{\setlength{\rightskip}{0pt plus 5cm}double bubble\-Sort\-::get\-Time (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classbubble_sort_abbf0758af12efdcb9963dfd4fbc78658}
+Bubble sort get\-Time function. Returns time data member, used to track time spent sorting. \begin{DoxyPrecond}{Precondition}
+None. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Time returned; value unchanged. 
+\end{DoxyPostcond}
+\hypertarget{classbubble_sort_a463cf03cf991f57da8b0c9510ce3a74b}{\index{bubble\-Sort@{bubble\-Sort}!readin@{readin}}
+\index{readin@{readin}!bubbleSort@{bubble\-Sort}}
+\subsubsection[{readin}]{\setlength{\rightskip}{0pt plus 5cm}void bubble\-Sort\-::readin (
+\begin{DoxyParamCaption}
+\item[{const int \&}]{size}
+\end{DoxyParamCaption}
+)}}\label{classbubble_sort_a463cf03cf991f57da8b0c9510ce3a74b}
+Bubble sort readin function. Reads in random data of specified size to sort. \begin{DoxyPrecond}{Precondition}
+Extant and correctly formatted text files 1000.\-txt, 10000.\-txt, 100000.\-txt, 1000000.\-txt, size parameter = 1000, 10000, 100000, 1000000 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Bubblesort array filled with read in values from 0 to size 
+\end{DoxyPostcond}
+
+\begin{DoxyParams}{Parameters}
+{\em size} & The size of the data to be read in. Only sizes of 1000, 10000, 100000, and 1000000 are supported in this implementation! \\
+\hline
+\end{DoxyParams}
+\hypertarget{classbubble_sort_ad4b151430666650dbbb6b85e8ff933a1}{\index{bubble\-Sort@{bubble\-Sort}!reset\-Counts@{reset\-Counts}}
+\index{reset\-Counts@{reset\-Counts}!bubbleSort@{bubble\-Sort}}
+\subsubsection[{reset\-Counts}]{\setlength{\rightskip}{0pt plus 5cm}void bubble\-Sort\-::reset\-Counts (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classbubble_sort_ad4b151430666650dbbb6b85e8ff933a1}
+Bubble sort reset\-Counts function. Resets time, comparisons, and swaps values to 0 if user wishes to reset the tracking of the sorting algorithm that has happened so far. \begin{DoxyPrecond}{Precondition}
+None. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Time, comparisons, swaps set to 0. 
+\end{DoxyPostcond}
+\hypertarget{classbubble_sort_ad85ec9495537d60aaeff8c6b5c4daee5}{\index{bubble\-Sort@{bubble\-Sort}!sort@{sort}}
+\index{sort@{sort}!bubbleSort@{bubble\-Sort}}
+\subsubsection[{sort}]{\setlength{\rightskip}{0pt plus 5cm}void bubble\-Sort\-::sort (
+\begin{DoxyParamCaption}
+\item[{const int \&}]{num\-Values}
+\end{DoxyParamCaption}
+)}}\label{classbubble_sort_ad85ec9495537d60aaeff8c6b5c4daee5}
+Sorts the items in an array into ascending order using bubble sort. Tracks time of operation, number of swaps, number of comparisons. Expect extremely long runtime with 1000000 values. Time operation coded for Linux. !!! A\-D\-A\-P\-T\-E\-D F\-R\-O\-M P\-O\-W\-E\-R\-P\-O\-I\-N\-T S\-L\-I\-D\-E C\-O\-D\-E !!! \begin{DoxyPrecond}{Precondition}
+None. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+the\-Array is sorted into ascending order; n is unchanged. 
+\end{DoxyPostcond}
+
+\begin{DoxyParams}{Parameters}
+{\em n} & The size of the\-Array. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{sorts_8h}{sorts.\-h}\item 
+\hyperlink{bubble_8cpp}{bubble.\-cpp}\end{DoxyCompactItemize}

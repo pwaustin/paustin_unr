@@ -1,0 +1,110 @@
+\begin{theindex}
+
+  \item {analyze\discretionary {-}{}{}Bubble}
+    \subitem {main.\discretionary {-}{}{}cpp}, \hyperpage{16}
+  \item {analyze\discretionary {-}{}{}Counting}
+    \subitem {main.\discretionary {-}{}{}cpp}, \hyperpage{16}
+  \item {analyze\discretionary {-}{}{}Merge}
+    \subitem {main.\discretionary {-}{}{}cpp}, \hyperpage{17}
+
+  \indexspace
+
+  \item {bubble.\discretionary {-}{}{}cpp}, \hyperpage{15}
+  \item {bubble\discretionary {-}{}{}Sort}, \hyperpage{5}
+    \subitem {bubble\discretionary {-}{}{}Sort}, \hyperpage{5}
+    \subitem {bubble\discretionary {-}{}{}Up}, \hyperpage{5}
+    \subitem {bubble\discretionary {-}{}{}Sort}, \hyperpage{5}
+    \subitem {get\discretionary {-}{}{}Comparisons}, \hyperpage{6}
+    \subitem {get\discretionary {-}{}{}Swaps}, \hyperpage{6}
+    \subitem {get\discretionary {-}{}{}Time}, \hyperpage{6}
+    \subitem {readin}, \hyperpage{6}
+    \subitem {reset\discretionary {-}{}{}Counts}, \hyperpage{7}
+    \subitem {sort}, \hyperpage{7}
+  \item {bubble\discretionary {-}{}{}Up}
+    \subitem {bubble\discretionary {-}{}{}Sort}, \hyperpage{5}
+
+  \indexspace
+
+  \item {counting.\discretionary {-}{}{}cpp}, \hyperpage{15}
+  \item {counting\discretionary {-}{}{}Sort}, \hyperpage{7}
+    \subitem {counting\discretionary {-}{}{}Sort}, \hyperpage{8}
+    \subitem {counting\discretionary {-}{}{}Sort}, \hyperpage{8}
+    \subitem {get\discretionary {-}{}{}Comparisons}, \hyperpage{8}
+    \subitem {get\discretionary {-}{}{}Swaps}, \hyperpage{8}
+    \subitem {get\discretionary {-}{}{}Time}, \hyperpage{8}
+    \subitem {readin}, \hyperpage{9}
+    \subitem {reset\discretionary {-}{}{}Counts}, \hyperpage{9}
+    \subitem {sort}, \hyperpage{9}
+
+  \indexspace
+
+  \item {get\discretionary {-}{}{}Comparisons}
+    \subitem {bubble\discretionary {-}{}{}Sort}, \hyperpage{6}
+    \subitem {counting\discretionary {-}{}{}Sort}, \hyperpage{8}
+    \subitem {merge\discretionary {-}{}{}Sort}, \hyperpage{10}
+  \item {get\discretionary {-}{}{}Swaps}
+    \subitem {bubble\discretionary {-}{}{}Sort}, \hyperpage{6}
+    \subitem {counting\discretionary {-}{}{}Sort}, \hyperpage{8}
+    \subitem {merge\discretionary {-}{}{}Sort}, \hyperpage{10}
+  \item {get\discretionary {-}{}{}Time}
+    \subitem {bubble\discretionary {-}{}{}Sort}, \hyperpage{6}
+    \subitem {counting\discretionary {-}{}{}Sort}, \hyperpage{8}
+    \subitem {merge\discretionary {-}{}{}Sort}, \hyperpage{11}
+
+  \indexspace
+
+  \item {M\discretionary {-}{}{}A\discretionary {-}{}{}X\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}S\discretionary {-}{}{}I\discretionary {-}{}{}Z\discretionary {-}{}{}E}
+    \subitem {sorts.\discretionary {-}{}{}h}, \hyperpage{18}
+  \item {M\discretionary {-}{}{}A\discretionary {-}{}{}X\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}V\discretionary {-}{}{}A\discretionary {-}{}{}L\discretionary {-}{}{}U\discretionary {-}{}{}E\discretionary {-}{}{}S}
+    \subitem {sorts.\discretionary {-}{}{}h}, \hyperpage{18}
+  \item {main}
+    \subitem {main.\discretionary {-}{}{}cpp}, \hyperpage{17}
+  \item {main.\discretionary {-}{}{}cpp}, \hyperpage{16}
+    \subitem {analyze\discretionary {-}{}{}Bubble}, \hyperpage{16}
+    \subitem {analyze\discretionary {-}{}{}Counting}, \hyperpage{16}
+    \subitem {analyze\discretionary {-}{}{}Merge}, \hyperpage{17}
+    \subitem {main}, \hyperpage{17}
+  \item {merge}
+    \subitem {merge\discretionary {-}{}{}Sort}, \hyperpage{11}
+  \item {merge.\discretionary {-}{}{}cpp}, \hyperpage{17}
+  \item {merge\discretionary {-}{}{}Sort}, \hyperpage{10}
+    \subitem {get\discretionary {-}{}{}Comparisons}, \hyperpage{10}
+    \subitem {get\discretionary {-}{}{}Swaps}, \hyperpage{10}
+    \subitem {get\discretionary {-}{}{}Time}, \hyperpage{11}
+    \subitem {merge}, \hyperpage{11}
+    \subitem {merge\discretionary {-}{}{}Sort}, \hyperpage{10}
+    \subitem {merge\discretionary {-}{}{}Sort}, \hyperpage{10}
+    \subitem {readin}, \hyperpage{12}
+    \subitem {reset\discretionary {-}{}{}Counts}, \hyperpage{12}
+    \subitem {sort}, \hyperpage{12}
+    \subitem {time\discretionary {-}{}{}Sort}, \hyperpage{13}
+
+  \indexspace
+
+  \item {readin}
+    \subitem {bubble\discretionary {-}{}{}Sort}, \hyperpage{6}
+    \subitem {counting\discretionary {-}{}{}Sort}, \hyperpage{9}
+    \subitem {merge\discretionary {-}{}{}Sort}, \hyperpage{12}
+  \item {reset\discretionary {-}{}{}Counts}
+    \subitem {bubble\discretionary {-}{}{}Sort}, \hyperpage{7}
+    \subitem {counting\discretionary {-}{}{}Sort}, \hyperpage{9}
+    \subitem {merge\discretionary {-}{}{}Sort}, \hyperpage{12}
+
+  \indexspace
+
+  \item {sort}
+    \subitem {bubble\discretionary {-}{}{}Sort}, \hyperpage{7}
+    \subitem {counting\discretionary {-}{}{}Sort}, \hyperpage{9}
+    \subitem {merge\discretionary {-}{}{}Sort}, \hyperpage{12}
+  \item {sorts.\discretionary {-}{}{}h}, \hyperpage{17}
+    \subitem {M\discretionary {-}{}{}A\discretionary {-}{}{}X\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}S\discretionary {-}{}{}I\discretionary {-}{}{}Z\discretionary {-}{}{}E}, 
+		\hyperpage{18}
+    \subitem {M\discretionary {-}{}{}A\discretionary {-}{}{}X\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}V\discretionary {-}{}{}A\discretionary {-}{}{}L\discretionary {-}{}{}U\discretionary {-}{}{}E\discretionary {-}{}{}S}, 
+		\hyperpage{18}
+
+  \indexspace
+
+  \item {time\discretionary {-}{}{}Sort}
+    \subitem {merge\discretionary {-}{}{}Sort}, \hyperpage{13}
+
+\end{theindex}

@@ -1,0 +1,370 @@
+Script started on Wed 17 Sep 2014 11:48:15 AM PDT
+]0;patrick@patrick-VirtualBox: ~/Desktop/Project_3patrick@patrick-VirtualBox:~/Desktop/Project_3$ g++ project3.cpp -o project3
+]0;patrick@patrick-VirtualBox: ~/Desktop/Project_3patrick@patrick-VirtualBox:~/Desktop/Project_3$ ./project3
+Welcome to the CS 202 card game program.
+
+Enter the name of the unshuffled cards data file: unshuffled_cards.txt
+
+Enter the name of the players data file: shuffle       players.txt
+
+Select an option:
+
+1. Shuffle cards
+2. Display decks and players
+3. Quit card game program
+
+Enter your selection: 1
+
+The cards have been shuffled. Returning to main menu... 
+
+Select an option:
+
+1. Shuffle cards
+2. Display decks and players
+3. Quit card game program
+
+Enter your selection: 2
+
+The unshuffled deck contains: 
+
+Card 1:
+Suit: heart   Rank: two   Card value: 2   Card location: unshuffled   
+
+Card 2:
+Suit: heart   Rank: three   Card value: 3   Card location: unshuffled   
+
+Card 3:
+Suit: heart   Rank: four   Card value: 4   Card location: unshuffled   
+
+Card 4:
+Suit: heart   Rank: five   Card value: 5   Card location: unshuffled   
+
+Card 5:
+Suit: heart   Rank: six   Card value: 6   Card location: unshuffled   
+
+Card 6:
+Suit: heart   Rank: seven   Card value: 7   Card location: unshuffled   
+
+Card 7:
+Suit: heart   Rank: eight   Card value: 8   Card location: unshuffled   
+
+Card 8:
+Suit: heart   Rank: nine   Card value: 9   Card location: unshuffled   
+
+Card 9:
+Suit: heart   Rank: ten   Card value: 10   Card location: unshuffled   
+
+Card 10:
+Suit: heart   Rank: jack   Card value: 10   Card location: unshuffled   
+
+Card 11:
+Suit: heart   Rank: queen   Card value: 10   Card location: unshuffled   
+
+Card 12:
+Suit: heart   Rank: king   Card value: 10   Card location: unshuffled   
+
+Card 13:
+Suit: heart   Rank: ace   Card value: 11   Card location: unshuffled   
+
+Card 14:
+Suit: diamond   Rank: two   Card value: 2   Card location: unshuffled   
+
+Card 15:
+Suit: diamond   Rank: three   Card value: 3   Card location: unshuffled   
+
+Card 16:
+Suit: diamond   Rank: four   Card value: 4   Card location: unshuffled   
+
+Card 17:
+Suit: diamond   Rank: five   Card value: 5   Card location: unshuffled   
+
+Card 18:
+Suit: diamond   Rank: six   Card value: 6   Card location: unshuffled   
+
+Card 19:
+Suit: diamond   Rank: seven   Card value: 7   Card location: unshuffled   
+
+Card 20:
+Suit: diamond   Rank: eight   Card value: 8   Card location: unshuffled   
+
+Card 21:
+Suit: diamond   Rank: nine   Card value: 9   Card location: unshuffled   
+
+Card 22:
+Suit: diamond   Rank: ten   Card value: 10   Card location: unshuffled   
+
+Card 23:
+Suit: diamond   Rank: jack   Card value: 10   Card location: unshuffled   
+
+Card 24:
+Suit: diamond   Rank: queen   Card value: 10   Card location: unshuffled   
+
+Card 25:
+Suit: diamond   Rank: king   Card value: 10   Card location: unshuffled   
+
+Card 26:
+Suit: diamond   Rank: ace   Card value: 11   Card location: unshuffled   
+
+Card 27:
+Suit: club   Rank: two   Card value: 2   Card location: unshuffled   
+
+Card 28:
+Suit: club   Rank: three   Card value: 3   Card location: unshuffled   
+
+Card 29:
+Suit: club   Rank: four   Card value: 4   Card location: unshuffled   
+
+Card 30:
+Suit: club   Rank: five   Card value: 5   Card location: unshuffled   
+
+Card 31:
+Suit: club   Rank: six   Card value: 6   Card location: unshuffled   
+
+Card 32:
+Suit: club   Rank: seven   Card value: 7   Card location: unshuffled   
+
+Card 33:
+Suit: club   Rank: eight   Card value: 8   Card location: unshuffled   
+
+Card 34:
+Suit: club   Rank: nine   Card value: 9   Card location: unshuffled   
+
+Card 35:
+Suit: club   Rank: ten   Card value: 10   Card location: unshuffled   
+
+Card 36:
+Suit: club   Rank: jack   Card value: 10   Card location: unshuffled   
+
+Card 37:
+Suit: club   Rank: queen   Card value: 10   Card location: unshuffled   
+
+Card 38:
+Suit: club   Rank: king   Card value: 10   Card location: unshuffled   
+
+Card 39:
+Suit: club   Rank: ace   Card value: 11   Card location: unshuffled   
+
+Card 40:
+Suit: spade   Rank: two   Card value: 2   Card location: unshuffled   
+
+Card 41:
+Suit: spade   Rank: three   Card value: 3   Card location: unshuffled   
+
+Card 42:
+Suit: spade   Rank: four   Card value: 4   Card location: unshuffled   
+
+Card 43:
+Suit: spade   Rank: five   Card value: 5   Card location: unshuffled   
+
+Card 44:
+Suit: spade   Rank: six   Card value: 6   Card location: unshuffled   
+
+Card 45:
+Suit: spade   Rank: seven   Card value: 7   Card location: unshuffled   
+
+Card 46:
+Suit: spade   Rank: eight   Card value: 8   Card location: unshuffled   
+
+Card 47:
+Suit: spade   Rank: nine   Card value: 9   Card location: unshuffled   
+
+Card 48:
+Suit: spade   Rank: ten   Card value: 10   Card location: unshuffled   
+
+Card 49:
+Suit: spade   Rank: jack   Card value: 10   Card location: unshuffled   
+
+Card 50:
+Suit: spade   Rank: queen   Card value: 10   Card location: unshuffled   
+
+Card 51:
+Suit: spade   Rank: king   Card value: 10   Card location: unshuffled   
+
+Card 52:
+Suit: spade   Rank: ace   Card value: 11   Card location: unshuffled   
+
+The shuffled deck contains: 
+
+Card 1:
+Suit: club   Rank: six   Card value: 6   Card location: shuffled   
+
+Card 2:
+Suit: spade   Rank: six   Card value: 6   Card location: shuffled   
+
+Card 3:
+Suit: club   Rank: seven   Card value: 7   Card location: shuffled   
+
+Card 4:
+Suit: club   Rank: queen   Card value: 10   Card location: shuffled   
+
+Card 5:
+Suit: spade   Rank: three   Card value: 3   Card location: shuffled   
+
+Card 6:
+Suit: spade   Rank: four   Card value: 4   Card location: shuffled   
+
+Card 7:
+Suit: diamond   Rank: three   Card value: 3   Card location: shuffled   
+
+Card 8:
+Suit: diamond   Rank: ace   Card value: 11   Card location: shuffled   
+
+Card 9:
+Suit: spade   Rank: queen   Card value: 10   Card location: shuffled   
+
+Card 10:
+Suit: club   Rank: nine   Card value: 9   Card location: shuffled   
+
+Card 11:
+Suit: diamond   Rank: six   Card value: 6   Card location: shuffled   
+
+Card 12:
+Suit: heart   Rank: jack   Card value: 10   Card location: shuffled   
+
+Card 13:
+Suit: club   Rank: jack   Card value: 10   Card location: shuffled   
+
+Card 14:
+Suit: diamond   Rank: king   Card value: 10   Card location: shuffled   
+
+Card 15:
+Suit: diamond   Rank: jack   Card value: 10   Card location: shuffled   
+
+Card 16:
+Suit: heart   Rank: ten   Card value: 10   Card location: shuffled   
+
+Card 17:
+Suit: heart   Rank: four   Card value: 4   Card location: shuffled   
+
+Card 18:
+Suit: diamond   Rank: four   Card value: 4   Card location: shuffled   
+
+Card 19:
+Suit: heart   Rank: three   Card value: 3   Card location: shuffled   
+
+Card 20:
+Suit: spade   Rank: king   Card value: 10   Card location: shuffled   
+
+Card 21:
+Suit: spade   Rank: seven   Card value: 7   Card location: shuffled   
+
+Card 22:
+Suit: heart   Rank: king   Card value: 10   Card location: shuffled   
+
+Card 23:
+Suit: heart   Rank: two   Card value: 2   Card location: shuffled   
+
+Card 24:
+Suit: spade   Rank: ace   Card value: 11   Card location: shuffled   
+
+Card 25:
+Suit: club   Rank: king   Card value: 10   Card location: shuffled   
+
+Card 26:
+Suit: heart   Rank: six   Card value: 6   Card location: shuffled   
+
+Card 27:
+Suit: heart   Rank: queen   Card value: 10   Card location: shuffled   
+
+Card 28:
+Suit: spade   Rank: ten   Card value: 10   Card location: shuffled   
+
+Card 29:
+Suit: club   Rank: ace   Card value: 11   Card location: shuffled   
+
+Card 30:
+Suit: heart   Rank: eight   Card value: 8   Card location: shuffled   
+
+Card 31:
+Suit: club   Rank: eight   Card value: 8   Card location: shuffled   
+
+Card 32:
+Suit: diamond   Rank: seven   Card value: 7   Card location: shuffled   
+
+Card 33:
+Suit: spade   Rank: two   Card value: 2   Card location: shuffled   
+
+Card 34:
+Suit: diamond   Rank: eight   Card value: 8   Card location: shuffled   
+
+Card 35:
+Suit: club   Rank: two   Card value: 2   Card location: shuffled   
+
+Card 36:
+Suit: club   Rank: ten   Card value: 10   Card location: shuffled   
+
+Card 37:
+Suit: club   Rank: three   Card value: 3   Card location: shuffled   
+
+Card 38:
+Suit: heart   Rank: nine   Card value: 9   Card location: shuffled   
+
+Card 39:
+Suit: diamond   Rank: five   Card value: 5   Card location: shuffled   
+
+Card 40:
+Suit: club   Rank: five   Card value: 5   Card location: shuffled   
+
+Card 41:
+Suit: heart   Rank: seven   Card value: 7   Card location: shuffled   
+
+Card 42:
+Suit: heart   Rank: five   Card value: 5   Card location: shuffled   
+
+Card 43:
+Suit: club   Rank: four   Card value: 4   Card location: shuffled   
+
+Card 44:
+Suit: spade   Rank: jack   Card value: 10   Card location: shuffled   
+
+Card 45:
+Suit: spade   Rank: five   Card value: 5   Card location: shuffled   
+
+Card 46:
+Suit: spade   Rank: nine   Card value: 9   Card location: shuffled   
+
+Card 47:
+Suit: diamond   Rank: ten   Card value: 10   Card location: shuffled   
+
+Card 48:
+Suit: spade   Rank: eight   Card value: 8   Card location: shuffled   
+
+Card 49:
+Suit: diamond   Rank: queen   Card value: 10   Card location: shuffled   
+
+Card 50:
+Suit: diamond   Rank: two   Card value: 2   Card location: shuffled   
+
+Card 51:
+Suit: diamond   Rank: nine   Card value: 9   Card location: shuffled   
+
+Card 52:
+Suit: heart   Rank: ace   Card value: 11   Card location: shuffled   
+
+The players are: 
+
+Player 1:
+Player's name: Patrick Austin   Player's total score: 0
+
+Player 2:
+Player's name: Nancy LaTourrette   Player's total score: 0
+
+Player 3:
+Player's name: Sam Tregillus   Player's total score: 0
+
+Player 4:
+Player's name: Prasun Dey   Player's total score: 0
+
+The decks and players have been displayed. Returning to main menu...
+
+Select an option:
+
+1. Shuffle cards
+2. Display decks and players
+3. Quit card game program
+
+Enter your selection: 3
+
+Thank you for using the card game program. Press any key to quit: a
+]0;patrick@patrick-VirtualBox: ~/Desktop/Project_3patrick@patrick-VirtualBox:~/Desktop/Project_3$ exit
+Script done on Wed 17 Sep 2014 11:49:00 AM PDT

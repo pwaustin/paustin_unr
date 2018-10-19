@@ -1,0 +1,1148 @@
+Script started on Wed 15 Oct 2014 11:23:19 AM PDT
+]0;patrick@patrick-VirtualBox: ~/Desktop/Project_6patrick@patrick-VirtualBox:~/Desktop/Project_6$ make clean
+rm -rf *.o project6.out
+]0;patrick@patrick-VirtualBox: ~/Desktop/Project_6patrick@patrick-VirtualBox:~/Desktop/Project_6$ make
+g++ -c project6.cpp
+project6.cpp: In function ‘int main()’:
+project6.cpp:253:51: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+      shuffledPointer[index].setLocation("shuffled");
+                                                   ^
+project6.cpp: In function ‘void getUnshuffledCards(std::ifstream&, card*)’:
+project6.cpp:569:52: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+   unshuffledPointer[index].setLocation("unshuffled");
+                                                    ^
+project6.cpp: In function ‘int dealToDiscard(card*, card*, int)’:
+project6.cpp:797:41: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+  discardPointer[0].setLocation("discard");
+                                         ^
+project6.cpp: In function ‘void dealToStock(card*, card*, int)’:
+project6.cpp:828:50: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+   stockPointer[stockLocation].setLocation("stock");
+                                                  ^
+g++ -c scat.cpp
+scat.cpp: In constructor ‘card::card()’:
+scat.cpp:13:24: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+  strCopy( rank, "rank" );
+                        ^
+scat.cpp:19:25: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+  strCopy ( suit, "suit" );
+                         ^
+scat.cpp:25:33: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+  strCopy ( location, "location" );
+                                 ^
+scat.cpp: In constructor ‘player::player(int)’:
+scat.cpp:151:25: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+  strCopy ( name, "name" );
+                         ^
+g++ -c strings.cpp
+g++ -o project6.out project6.o scat.o strings.o
+]0;patrick@patrick-VirtualBox: ~/Desktop/Project_6patrick@patrick-VirtualBox:~/Desktop/Project_6$ ./project6.out
+Welcome to the CS 202 card game program.
+
+Enter the number of players: 8
+
+Enter player information datafile: players.txt
+
+Enter the name of the unshuffled cards data file: unshuffled_cards.txt
+
+Select an option:
+
+<1> Shuffle cards
+<2> Display unshuffled deck
+<3> Display shuffled deck
+<4> Deal cards
+<5> Quit card game program
+
+Enter your selection: 1
+
+The cards have been shuffled. Returning to main menu... 
+
+Select an option:
+
+<1> Shuffle cards
+<2> Display unshuffled deck
+<3> Display shuffled deck
+<4> Deal cards
+<5> Quit card game program
+
+Enter your selection: 2
+
+The unshuffled deck contains: 
+
+Card 1:
+Rank: two Suit: heart Location: unshuffled Card value: 2
+Card 2:
+Rank: three Suit: heart Location: unshuffled Card value: 3
+Card 3:
+Rank: four Suit: heart Location: unshuffled Card value: 4
+Card 4:
+Rank: five Suit: heart Location: unshuffled Card value: 5
+Card 5:
+Rank: six Suit: heart Location: unshuffled Card value: 6
+Card 6:
+Rank: seven Suit: heart Location: unshuffled Card value: 7
+Card 7:
+Rank: eight Suit: heart Location: unshuffled Card value: 8
+Card 8:
+Rank: nine Suit: heart Location: unshuffled Card value: 9
+Card 9:
+Rank: ten Suit: heart Location: unshuffled Card value: 10
+Card 10:
+Rank: jack Suit: heart Location: unshuffled Card value: 10
+Card 11:
+Rank: queen Suit: heart Location: unshuffled Card value: 10
+Card 12:
+Rank: king Suit: heart Location: unshuffled Card value: 10
+Card 13:
+Rank: ace Suit: heart Location: unshuffled Card value: 11
+Card 14:
+Rank: two Suit: diamond Location: unshuffled Card value: 2
+Card 15:
+Rank: three Suit: diamond Location: unshuffled Card value: 3
+Card 16:
+Rank: four Suit: diamond Location: unshuffled Card value: 4
+Card 17:
+Rank: five Suit: diamond Location: unshuffled Card value: 5
+Card 18:
+Rank: six Suit: diamond Location: unshuffled Card value: 6
+Card 19:
+Rank: seven Suit: diamond Location: unshuffled Card value: 7
+Card 20:
+Rank: eight Suit: diamond Location: unshuffled Card value: 8
+Card 21:
+Rank: nine Suit: diamond Location: unshuffled Card value: 9
+Card 22:
+Rank: ten Suit: diamond Location: unshuffled Card value: 10
+Card 23:
+Rank: jack Suit: diamond Location: unshuffled Card value: 10
+Card 24:
+Rank: queen Suit: diamond Location: unshuffled Card value: 10
+Card 25:
+Rank: king Suit: diamond Location: unshuffled Card value: 10
+Card 26:
+Rank: ace Suit: diamond Location: unshuffled Card value: 11
+Card 27:
+Rank: two Suit: club Location: unshuffled Card value: 2
+Card 28:
+Rank: three Suit: club Location: unshuffled Card value: 3
+Card 29:
+Rank: four Suit: club Location: unshuffled Card value: 4
+Card 30:
+Rank: five Suit: club Location: unshuffled Card value: 5
+Card 31:
+Rank: six Suit: club Location: unshuffled Card value: 6
+Card 32:
+Rank: seven Suit: club Location: unshuffled Card value: 7
+Card 33:
+Rank: eight Suit: club Location: unshuffled Card value: 8
+Card 34:
+Rank: nine Suit: club Location: unshuffled Card value: 9
+Card 35:
+Rank: ten Suit: club Location: unshuffled Card value: 10
+Card 36:
+Rank: jack Suit: club Location: unshuffled Card value: 10
+Card 37:
+Rank: queen Suit: club Location: unshuffled Card value: 10
+Card 38:
+Rank: king Suit: club Location: unshuffled Card value: 10
+Card 39:
+Rank: ace Suit: club Location: unshuffled Card value: 11
+Card 40:
+Rank: two Suit: spade Location: unshuffled Card value: 2
+Card 41:
+Rank: three Suit: spade Location: unshuffled Card value: 3
+Card 42:
+Rank: four Suit: spade Location: unshuffled Card value: 4
+Card 43:
+Rank: five Suit: spade Location: unshuffled Card value: 5
+Card 44:
+Rank: six Suit: spade Location: unshuffled Card value: 6
+Card 45:
+Rank: seven Suit: spade Location: unshuffled Card value: 7
+Card 46:
+Rank: eight Suit: spade Location: unshuffled Card value: 8
+Card 47:
+Rank: nine Suit: spade Location: unshuffled Card value: 9
+Card 48:
+Rank: ten Suit: spade Location: unshuffled Card value: 10
+Card 49:
+Rank: jack Suit: spade Location: unshuffled Card value: 10
+Card 50:
+Rank: queen Suit: spade Location: unshuffled Card value: 10
+Card 51:
+Rank: king Suit: spade Location: unshuffled Card value: 10
+Card 52:
+Rank: ace Suit: spade Location: unshuffled Card value: 11
+
+Returning to main menu...
+
+Select an option:
+
+<1> Shuffle cards
+<2> Display unshuffled deck
+<3> Display shuffled deck
+<4> Deal cards
+<5> Quit card game program
+
+Enter your selection: 3
+
+The shuffled deck contains: 
+
+Card 1:
+Rank: three Suit: diamond Location: shuffled Card value: 3
+Card 2:
+Rank: seven Suit: spade Location: shuffled Card value: 7
+Card 3:
+Rank: jack Suit: club Location: shuffled Card value: 10
+Card 4:
+Rank: ten Suit: diamond Location: shuffled Card value: 10
+Card 5:
+Rank: two Suit: diamond Location: shuffled Card value: 2
+Card 6:
+Rank: ace Suit: spade Location: shuffled Card value: 11
+Card 7:
+Rank: nine Suit: heart Location: shuffled Card value: 9
+Card 8:
+Rank: queen Suit: club Location: shuffled Card value: 10
+Card 9:
+Rank: five Suit: club Location: shuffled Card value: 5
+Card 10:
+Rank: four Suit: club Location: shuffled Card value: 4
+Card 11:
+Rank: two Suit: spade Location: shuffled Card value: 2
+Card 12:
+Rank: four Suit: spade Location: shuffled Card value: 4
+Card 13:
+Rank: king Suit: club Location: shuffled Card value: 10
+Card 14:
+Rank: jack Suit: heart Location: shuffled Card value: 10
+Card 15:
+Rank: queen Suit: heart Location: shuffled Card value: 10
+Card 16:
+Rank: five Suit: heart Location: shuffled Card value: 5
+Card 17:
+Rank: two Suit: club Location: shuffled Card value: 2
+Card 18:
+Rank: two Suit: heart Location: shuffled Card value: 2
+Card 19:
+Rank: queen Suit: spade Location: shuffled Card value: 10
+Card 20:
+Rank: ten Suit: club Location: shuffled Card value: 10
+Card 21:
+Rank: queen Suit: diamond Location: shuffled Card value: 10
+Card 22:
+Rank: jack Suit: diamond Location: shuffled Card value: 10
+Card 23:
+Rank: eight Suit: diamond Location: shuffled Card value: 8
+Card 24:
+Rank: five Suit: spade Location: shuffled Card value: 5
+Card 25:
+Rank: seven Suit: diamond Location: shuffled Card value: 7
+Card 26:
+Rank: four Suit: heart Location: shuffled Card value: 4
+Card 27:
+Rank: nine Suit: spade Location: shuffled Card value: 9
+Card 28:
+Rank: jack Suit: spade Location: shuffled Card value: 10
+Card 29:
+Rank: eight Suit: heart Location: shuffled Card value: 8
+Card 30:
+Rank: ten Suit: spade Location: shuffled Card value: 10
+Card 31:
+Rank: ace Suit: club Location: shuffled Card value: 11
+Card 32:
+Rank: five Suit: diamond Location: shuffled Card value: 5
+Card 33:
+Rank: eight Suit: spade Location: shuffled Card value: 8
+Card 34:
+Rank: four Suit: diamond Location: shuffled Card value: 4
+Card 35:
+Rank: ace Suit: heart Location: shuffled Card value: 11
+Card 36:
+Rank: nine Suit: diamond Location: shuffled Card value: 9
+Card 37:
+Rank: six Suit: club Location: shuffled Card value: 6
+Card 38:
+Rank: king Suit: spade Location: shuffled Card value: 10
+Card 39:
+Rank: eight Suit: club Location: shuffled Card value: 8
+Card 40:
+Rank: six Suit: heart Location: shuffled Card value: 6
+Card 41:
+Rank: ace Suit: diamond Location: shuffled Card value: 11
+Card 42:
+Rank: six Suit: spade Location: shuffled Card value: 6
+Card 43:
+Rank: seven Suit: club Location: shuffled Card value: 7
+Card 44:
+Rank: three Suit: spade Location: shuffled Card value: 3
+Card 45:
+Rank: seven Suit: heart Location: shuffled Card value: 7
+Card 46:
+Rank: king Suit: diamond Location: shuffled Card value: 10
+Card 47:
+Rank: three Suit: club Location: shuffled Card value: 3
+Card 48:
+Rank: three Suit: heart Location: shuffled Card value: 3
+Card 49:
+Rank: ten Suit: heart Location: shuffled Card value: 10
+Card 50:
+Rank: six Suit: diamond Location: shuffled Card value: 6
+Card 51:
+Rank: king Suit: heart Location: shuffled Card value: 10
+Card 52:
+Rank: nine Suit: club Location: shuffled Card value: 9
+
+Returning to main menu...
+
+Select an option:
+
+<1> Shuffle cards
+<2> Display unshuffled deck
+<3> Display shuffled deck
+<4> Deal cards
+<5> Quit card game program
+
+Enter your selection: 1
+
+The cards have been shuffled. Returning to main menu... 
+
+Select an option:
+
+<1> Shuffle cards
+<2> Display unshuffled deck
+<3> Display shuffled deck
+<4> Deal cards
+<5> Quit card game program
+
+Enter your selection: 2
+
+The unshuffled deck contains: 
+
+Card 1:
+Rank: two Suit: heart Location: unshuffled Card value: 2
+Card 2:
+Rank: three Suit: heart Location: unshuffled Card value: 3
+Card 3:
+Rank: four Suit: heart Location: unshuffled Card value: 4
+Card 4:
+Rank: five Suit: heart Location: unshuffled Card value: 5
+Card 5:
+Rank: six Suit: heart Location: unshuffled Card value: 6
+Card 6:
+Rank: seven Suit: heart Location: unshuffled Card value: 7
+Card 7:
+Rank: eight Suit: heart Location: unshuffled Card value: 8
+Card 8:
+Rank: nine Suit: heart Location: unshuffled Card value: 9
+Card 9:
+Rank: ten Suit: heart Location: unshuffled Card value: 10
+Card 10:
+Rank: jack Suit: heart Location: unshuffled Card value: 10
+Card 11:
+Rank: queen Suit: heart Location: unshuffled Card value: 10
+Card 12:
+Rank: king Suit: heart Location: unshuffled Card value: 10
+Card 13:
+Rank: ace Suit: heart Location: unshuffled Card value: 11
+Card 14:
+Rank: two Suit: diamond Location: unshuffled Card value: 2
+Card 15:
+Rank: three Suit: diamond Location: unshuffled Card value: 3
+Card 16:
+Rank: four Suit: diamond Location: unshuffled Card value: 4
+Card 17:
+Rank: five Suit: diamond Location: unshuffled Card value: 5
+Card 18:
+Rank: six Suit: diamond Location: unshuffled Card value: 6
+Card 19:
+Rank: seven Suit: diamond Location: unshuffled Card value: 7
+Card 20:
+Rank: eight Suit: diamond Location: unshuffled Card value: 8
+Card 21:
+Rank: nine Suit: diamond Location: unshuffled Card value: 9
+Card 22:
+Rank: ten Suit: diamond Location: unshuffled Card value: 10
+Card 23:
+Rank: jack Suit: diamond Location: unshuffled Card value: 10
+Card 24:
+Rank: queen Suit: diamond Location: unshuffled Card value: 10
+Card 25:
+Rank: king Suit: diamond Location: unshuffled Card value: 10
+Card 26:
+Rank: ace Suit: diamond Location: unshuffled Card value: 11
+Card 27:
+Rank: two Suit: club Location: unshuffled Card value: 2
+Card 28:
+Rank: three Suit: club Location: unshuffled Card value: 3
+Card 29:
+Rank: four Suit: club Location: unshuffled Card value: 4
+Card 30:
+Rank: five Suit: club Location: unshuffled Card value: 5
+Card 31:
+Rank: six Suit: club Location: unshuffled Card value: 6
+Card 32:
+Rank: seven Suit: club Location: unshuffled Card value: 7
+Card 33:
+Rank: eight Suit: club Location: unshuffled Card value: 8
+Card 34:
+Rank: nine Suit: club Location: unshuffled Card value: 9
+Card 35:
+Rank: ten Suit: club Location: unshuffled Card value: 10
+Card 36:
+Rank: jack Suit: club Location: unshuffled Card value: 10
+Card 37:
+Rank: queen Suit: club Location: unshuffled Card value: 10
+Card 38:
+Rank: king Suit: club Location: unshuffled Card value: 10
+Card 39:
+Rank: ace Suit: club Location: unshuffled Card value: 11
+Card 40:
+Rank: two Suit: spade Location: unshuffled Card value: 2
+Card 41:
+Rank: three Suit: spade Location: unshuffled Card value: 3
+Card 42:
+Rank: four Suit: spade Location: unshuffled Card value: 4
+Card 43:
+Rank: five Suit: spade Location: unshuffled Card value: 5
+Card 44:
+Rank: six Suit: spade Location: unshuffled Card value: 6
+Card 45:
+Rank: seven Suit: spade Location: unshuffled Card value: 7
+Card 46:
+Rank: eight Suit: spade Location: unshuffled Card value: 8
+Card 47:
+Rank: nine Suit: spade Location: unshuffled Card value: 9
+Card 48:
+Rank: ten Suit: spade Location: unshuffled Card value: 10
+Card 49:
+Rank: jack Suit: spade Location: unshuffled Card value: 10
+Card 50:
+Rank: queen Suit: spade Location: unshuffled Card value: 10
+Card 51:
+Rank: king Suit: spade Location: unshuffled Card value: 10
+Card 52:
+Rank: ace Suit: spade Location: unshuffled Card value: 11
+
+Returning to main menu...
+
+Select an option:
+
+<1> Shuffle cards
+<2> Display unshuffled deck
+<3> Display shuffled deck
+<4> Deal cards
+<5> Quit card game program
+
+Enter your selection: 3
+
+The shuffled deck contains: 
+
+Card 1:
+Rank: five Suit: diamond Location: shuffled Card value: 5
+Card 2:
+Rank: five Suit: spade Location: shuffled Card value: 5
+Card 3:
+Rank: eight Suit: club Location: shuffled Card value: 8
+Card 4:
+Rank: six Suit: heart Location: shuffled Card value: 6
+Card 5:
+Rank: two Suit: diamond Location: shuffled Card value: 2
+Card 6:
+Rank: four Suit: heart Location: shuffled Card value: 4
+Card 7:
+Rank: queen Suit: spade Location: shuffled Card value: 10
+Card 8:
+Rank: jack Suit: heart Location: shuffled Card value: 10
+Card 9:
+Rank: three Suit: diamond Location: shuffled Card value: 3
+Card 10:
+Rank: ace Suit: diamond Location: shuffled Card value: 11
+Card 11:
+Rank: ten Suit: spade Location: shuffled Card value: 10
+Card 12:
+Rank: seven Suit: diamond Location: shuffled Card value: 7
+Card 13:
+Rank: nine Suit: diamond Location: shuffled Card value: 9
+Card 14:
+Rank: four Suit: spade Location: shuffled Card value: 4
+Card 15:
+Rank: six Suit: diamond Location: shuffled Card value: 6
+Card 16:
+Rank: king Suit: club Location: shuffled Card value: 10
+Card 17:
+Rank: ten Suit: heart Location: shuffled Card value: 10
+Card 18:
+Rank: nine Suit: spade Location: shuffled Card value: 9
+Card 19:
+Rank: six Suit: club Location: shuffled Card value: 6
+Card 20:
+Rank: ace Suit: heart Location: shuffled Card value: 11
+Card 21:
+Rank: two Suit: heart Location: shuffled Card value: 2
+Card 22:
+Rank: nine Suit: club Location: shuffled Card value: 9
+Card 23:
+Rank: three Suit: spade Location: shuffled Card value: 3
+Card 24:
+Rank: two Suit: club Location: shuffled Card value: 2
+Card 25:
+Rank: ace Suit: club Location: shuffled Card value: 11
+Card 26:
+Rank: ace Suit: spade Location: shuffled Card value: 11
+Card 27:
+Rank: five Suit: club Location: shuffled Card value: 5
+Card 28:
+Rank: jack Suit: club Location: shuffled Card value: 10
+Card 29:
+Rank: seven Suit: spade Location: shuffled Card value: 7
+Card 30:
+Rank: jack Suit: spade Location: shuffled Card value: 10
+Card 31:
+Rank: queen Suit: diamond Location: shuffled Card value: 10
+Card 32:
+Rank: queen Suit: heart Location: shuffled Card value: 10
+Card 33:
+Rank: queen Suit: club Location: shuffled Card value: 10
+Card 34:
+Rank: eight Suit: spade Location: shuffled Card value: 8
+Card 35:
+Rank: three Suit: heart Location: shuffled Card value: 3
+Card 36:
+Rank: four Suit: diamond Location: shuffled Card value: 4
+Card 37:
+Rank: jack Suit: diamond Location: shuffled Card value: 10
+Card 38:
+Rank: eight Suit: heart Location: shuffled Card value: 8
+Card 39:
+Rank: eight Suit: diamond Location: shuffled Card value: 8
+Card 40:
+Rank: ten Suit: club Location: shuffled Card value: 10
+Card 41:
+Rank: king Suit: spade Location: shuffled Card value: 10
+Card 42:
+Rank: three Suit: club Location: shuffled Card value: 3
+Card 43:
+Rank: seven Suit: heart Location: shuffled Card value: 7
+Card 44:
+Rank: ten Suit: diamond Location: shuffled Card value: 10
+Card 45:
+Rank: king Suit: heart Location: shuffled Card value: 10
+Card 46:
+Rank: nine Suit: heart Location: shuffled Card value: 9
+Card 47:
+Rank: king Suit: diamond Location: shuffled Card value: 10
+Card 48:
+Rank: four Suit: club Location: shuffled Card value: 4
+Card 49:
+Rank: five Suit: heart Location: shuffled Card value: 5
+Card 50:
+Rank: six Suit: spade Location: shuffled Card value: 6
+Card 51:
+Rank: seven Suit: club Location: shuffled Card value: 7
+Card 52:
+Rank: two Suit: spade Location: shuffled Card value: 2
+
+Returning to main menu...
+
+Select an option:
+
+<1> Shuffle cards
+<2> Display unshuffled deck
+<3> Display shuffled deck
+<4> Deal cards
+<5> Quit card game program
+
+Enter your selection: 4
+
+The cards have been dealt. Select an option: 
+
+<1> Display players
+<2> Display discard and stock piles
+<3> Return to main menu
+
+Enter your selection: 1
+
+The players are: 
+
+Player 1:
+Name: Patrick Austin Total: 18
+Patrick Austin's hand card 1:
+Rank: five Suit: diamond Location: Patrick Austin Card value: 5
+Patrick Austin's hand card 2:
+Rank: three Suit: diamond Location: Patrick Austin Card value: 3
+Patrick Austin's hand card 3:
+Rank: ten Suit: heart Location: Patrick Austin Card value: 10
+Player 2:
+Name: Nancy LaTourrette Total: 25
+Nancy LaTourrette's hand card 1:
+Rank: five Suit: spade Location: Nancy LaTourrette Card value: 5
+Nancy LaTourrette's hand card 2:
+Rank: ace Suit: diamond Location: Nancy LaTourrette Card value: 11
+Nancy LaTourrette's hand card 3:
+Rank: nine Suit: spade Location: Nancy LaTourrette Card value: 9
+Player 3:
+Name: Sam Tregillus Total: 24
+Sam Tregillus's hand card 1:
+Rank: eight Suit: club Location: Sam Tregillus Card value: 8
+Sam Tregillus's hand card 2:
+Rank: ten Suit: spade Location: Sam Tregillus Card value: 10
+Sam Tregillus's hand card 3:
+Rank: six Suit: club Location: Sam Tregillus Card value: 6
+Player 4:
+Name: Prasun Dey Total: 24
+Prasun Dey's hand card 1:
+Rank: six Suit: heart Location: Prasun Dey Card value: 6
+Prasun Dey's hand card 2:
+Rank: seven Suit: diamond Location: Prasun Dey Card value: 7
+Prasun Dey's hand card 3:
+Rank: ace Suit: heart Location: Prasun Dey Card value: 11
+Player 5:
+Name: Austin Sanders Total: 13
+Austin Sanders's hand card 1:
+Rank: two Suit: diamond Location: Austin Sanders Card value: 2
+Austin Sanders's hand card 2:
+Rank: nine Suit: diamond Location: Austin Sanders Card value: 9
+Austin Sanders's hand card 3:
+Rank: two Suit: heart Location: Austin Sanders Card value: 2
+Player 6:
+Name: George Bebis Total: 17
+George Bebis's hand card 1:
+Rank: four Suit: heart Location: George Bebis Card value: 4
+George Bebis's hand card 2:
+Rank: four Suit: spade Location: George Bebis Card value: 4
+George Bebis's hand card 3:
+Rank: nine Suit: club Location: George Bebis Card value: 9
+Player 7:
+Name: John Doe Total: 19
+John Doe's hand card 1:
+Rank: queen Suit: spade Location: John Doe Card value: 10
+John Doe's hand card 2:
+Rank: six Suit: diamond Location: John Doe Card value: 6
+John Doe's hand card 3:
+Rank: three Suit: spade Location: John Doe Card value: 3
+Player 8:
+Name: Richard Panini Total: 22
+Richard Panini's hand card 1:
+Rank: jack Suit: heart Location: Richard Panini Card value: 10
+Richard Panini's hand card 2:
+Rank: king Suit: club Location: Richard Panini Card value: 10
+Richard Panini's hand card 3:
+Rank: two Suit: club Location: Richard Panini Card value: 2
+
+Returning to deal menu...
+
+The cards have been dealt. Select an option: 
+
+<1> Display players
+<2> Display discard and stock piles
+<3> Return to main menu
+
+Enter your selection: 2
+
+The discard pile contains: 
+
+Card 1: 
+Rank: ace Suit: club Location: discard Card value: 11
+
+The stock pile contains: 
+
+Card 1:
+Rank: ace Suit: spade Location: stock Card value: 11
+Card 2:
+Rank: five Suit: club Location: stock Card value: 5
+Card 3:
+Rank: jack Suit: club Location: stock Card value: 10
+Card 4:
+Rank: seven Suit: spade Location: stock Card value: 7
+Card 5:
+Rank: jack Suit: spade Location: stock Card value: 10
+Card 6:
+Rank: queen Suit: diamond Location: stock Card value: 10
+Card 7:
+Rank: queen Suit: heart Location: stock Card value: 10
+Card 8:
+Rank: queen Suit: club Location: stock Card value: 10
+Card 9:
+Rank: eight Suit: spade Location: stock Card value: 8
+Card 10:
+Rank: three Suit: heart Location: stock Card value: 3
+Card 11:
+Rank: four Suit: diamond Location: stock Card value: 4
+Card 12:
+Rank: jack Suit: diamond Location: stock Card value: 10
+Card 13:
+Rank: eight Suit: heart Location: stock Card value: 8
+Card 14:
+Rank: eight Suit: diamond Location: stock Card value: 8
+Card 15:
+Rank: ten Suit: club Location: stock Card value: 10
+Card 16:
+Rank: king Suit: spade Location: stock Card value: 10
+Card 17:
+Rank: three Suit: club Location: stock Card value: 3
+Card 18:
+Rank: seven Suit: heart Location: stock Card value: 7
+Card 19:
+Rank: ten Suit: diamond Location: stock Card value: 10
+Card 20:
+Rank: king Suit: heart Location: stock Card value: 10
+Card 21:
+Rank: nine Suit: heart Location: stock Card value: 9
+Card 22:
+Rank: king Suit: diamond Location: stock Card value: 10
+Card 23:
+Rank: four Suit: club Location: stock Card value: 4
+Card 24:
+Rank: five Suit: heart Location: stock Card value: 5
+Card 25:
+Rank: six Suit: spade Location: stock Card value: 6
+Card 26:
+Rank: seven Suit: club Location: stock Card value: 7
+Card 27:
+Rank: two Suit: spade Location: stock Card value: 2
+
+Returning to deal menu...
+
+The cards have been dealt. Select an option: 
+
+<1> Display players
+<2> Display discard and stock piles
+<3> Return to main menu
+
+Enter your selection: 3
+
+Returning to main menu...
+
+Select an option:
+
+<1> Shuffle cards
+<2> Display unshuffled deck
+<3> Display shuffled deck
+<4> Deal cards
+<5> Quit card game program
+
+Enter your selection: 1
+
+The cards have been shuffled. Returning to main menu... 
+
+Select an option:
+
+<1> Shuffle cards
+<2> Display unshuffled deck
+<3> Display shuffled deck
+<4> Deal cards
+<5> Quit card game program
+
+Enter your selection: 2
+
+The unshuffled deck contains: 
+
+Card 1:
+Rank: two Suit: heart Location: unshuffled Card value: 2
+Card 2:
+Rank: three Suit: heart Location: unshuffled Card value: 3
+Card 3:
+Rank: four Suit: heart Location: unshuffled Card value: 4
+Card 4:
+Rank: five Suit: heart Location: unshuffled Card value: 5
+Card 5:
+Rank: six Suit: heart Location: unshuffled Card value: 6
+Card 6:
+Rank: seven Suit: heart Location: unshuffled Card value: 7
+Card 7:
+Rank: eight Suit: heart Location: unshuffled Card value: 8
+Card 8:
+Rank: nine Suit: heart Location: unshuffled Card value: 9
+Card 9:
+Rank: ten Suit: heart Location: unshuffled Card value: 10
+Card 10:
+Rank: jack Suit: heart Location: unshuffled Card value: 10
+Card 11:
+Rank: queen Suit: heart Location: unshuffled Card value: 10
+Card 12:
+Rank: king Suit: heart Location: unshuffled Card value: 10
+Card 13:
+Rank: ace Suit: heart Location: unshuffled Card value: 11
+Card 14:
+Rank: two Suit: diamond Location: unshuffled Card value: 2
+Card 15:
+Rank: three Suit: diamond Location: unshuffled Card value: 3
+Card 16:
+Rank: four Suit: diamond Location: unshuffled Card value: 4
+Card 17:
+Rank: five Suit: diamond Location: unshuffled Card value: 5
+Card 18:
+Rank: six Suit: diamond Location: unshuffled Card value: 6
+Card 19:
+Rank: seven Suit: diamond Location: unshuffled Card value: 7
+Card 20:
+Rank: eight Suit: diamond Location: unshuffled Card value: 8
+Card 21:
+Rank: nine Suit: diamond Location: unshuffled Card value: 9
+Card 22:
+Rank: ten Suit: diamond Location: unshuffled Card value: 10
+Card 23:
+Rank: jack Suit: diamond Location: unshuffled Card value: 10
+Card 24:
+Rank: queen Suit: diamond Location: unshuffled Card value: 10
+Card 25:
+Rank: king Suit: diamond Location: unshuffled Card value: 10
+Card 26:
+Rank: ace Suit: diamond Location: unshuffled Card value: 11
+Card 27:
+Rank: two Suit: club Location: unshuffled Card value: 2
+Card 28:
+Rank: three Suit: club Location: unshuffled Card value: 3
+Card 29:
+Rank: four Suit: club Location: unshuffled Card value: 4
+Card 30:
+Rank: five Suit: club Location: unshuffled Card value: 5
+Card 31:
+Rank: six Suit: club Location: unshuffled Card value: 6
+Card 32:
+Rank: seven Suit: club Location: unshuffled Card value: 7
+Card 33:
+Rank: eight Suit: club Location: unshuffled Card value: 8
+Card 34:
+Rank: nine Suit: club Location: unshuffled Card value: 9
+Card 35:
+Rank: ten Suit: club Location: unshuffled Card value: 10
+Card 36:
+Rank: jack Suit: club Location: unshuffled Card value: 10
+Card 37:
+Rank: queen Suit: club Location: unshuffled Card value: 10
+Card 38:
+Rank: king Suit: club Location: unshuffled Card value: 10
+Card 39:
+Rank: ace Suit: club Location: unshuffled Card value: 11
+Card 40:
+Rank: two Suit: spade Location: unshuffled Card value: 2
+Card 41:
+Rank: three Suit: spade Location: unshuffled Card value: 3
+Card 42:
+Rank: four Suit: spade Location: unshuffled Card value: 4
+Card 43:
+Rank: five Suit: spade Location: unshuffled Card value: 5
+Card 44:
+Rank: six Suit: spade Location: unshuffled Card value: 6
+Card 45:
+Rank: seven Suit: spade Location: unshuffled Card value: 7
+Card 46:
+Rank: eight Suit: spade Location: unshuffled Card value: 8
+Card 47:
+Rank: nine Suit: spade Location: unshuffled Card value: 9
+Card 48:
+Rank: ten Suit: spade Location: unshuffled Card value: 10
+Card 49:
+Rank: jack Suit: spade Location: unshuffled Card value: 10
+Card 50:
+Rank: queen Suit: spade Location: unshuffled Card value: 10
+Card 51:
+Rank: king Suit: spade Location: unshuffled Card value: 10
+Card 52:
+Rank: ace Suit: spade Location: unshuffled Card value: 11
+
+Returning to main menu...
+
+Select an option:
+
+<1> Shuffle cards
+<2> Display unshuffled deck
+<3> Display shuffled deck
+<4> Deal cards
+<5> Quit card game program
+
+Enter your selection: 3
+
+The shuffled deck contains: 
+
+Card 1:
+Rank: nine Suit: spade Location: shuffled Card value: 9
+Card 2:
+Rank: six Suit: spade Location: shuffled Card value: 6
+Card 3:
+Rank: four Suit: spade Location: shuffled Card value: 4
+Card 4:
+Rank: two Suit: diamond Location: shuffled Card value: 2
+Card 5:
+Rank: five Suit: diamond Location: shuffled Card value: 5
+Card 6:
+Rank: ace Suit: diamond Location: shuffled Card value: 11
+Card 7:
+Rank: queen Suit: heart Location: shuffled Card value: 10
+Card 8:
+Rank: king Suit: club Location: shuffled Card value: 10
+Card 9:
+Rank: ace Suit: spade Location: shuffled Card value: 11
+Card 10:
+Rank: three Suit: diamond Location: shuffled Card value: 3
+Card 11:
+Rank: six Suit: heart Location: shuffled Card value: 6
+Card 12:
+Rank: seven Suit: spade Location: shuffled Card value: 7
+Card 13:
+Rank: eight Suit: club Location: shuffled Card value: 8
+Card 14:
+Rank: two Suit: club Location: shuffled Card value: 2
+Card 15:
+Rank: ten Suit: club Location: shuffled Card value: 10
+Card 16:
+Rank: three Suit: heart Location: shuffled Card value: 3
+Card 17:
+Rank: five Suit: heart Location: shuffled Card value: 5
+Card 18:
+Rank: three Suit: spade Location: shuffled Card value: 3
+Card 19:
+Rank: queen Suit: spade Location: shuffled Card value: 10
+Card 20:
+Rank: ten Suit: diamond Location: shuffled Card value: 10
+Card 21:
+Rank: king Suit: diamond Location: shuffled Card value: 10
+Card 22:
+Rank: jack Suit: heart Location: shuffled Card value: 10
+Card 23:
+Rank: four Suit: heart Location: shuffled Card value: 4
+Card 24:
+Rank: nine Suit: heart Location: shuffled Card value: 9
+Card 25:
+Rank: nine Suit: club Location: shuffled Card value: 9
+Card 26:
+Rank: seven Suit: diamond Location: shuffled Card value: 7
+Card 27:
+Rank: six Suit: club Location: shuffled Card value: 6
+Card 28:
+Rank: six Suit: diamond Location: shuffled Card value: 6
+Card 29:
+Rank: two Suit: spade Location: shuffled Card value: 2
+Card 30:
+Rank: queen Suit: club Location: shuffled Card value: 10
+Card 31:
+Rank: seven Suit: heart Location: shuffled Card value: 7
+Card 32:
+Rank: five Suit: spade Location: shuffled Card value: 5
+Card 33:
+Rank: four Suit: club Location: shuffled Card value: 4
+Card 34:
+Rank: two Suit: heart Location: shuffled Card value: 2
+Card 35:
+Rank: king Suit: spade Location: shuffled Card value: 10
+Card 36:
+Rank: ten Suit: heart Location: shuffled Card value: 10
+Card 37:
+Rank: jack Suit: spade Location: shuffled Card value: 10
+Card 38:
+Rank: ten Suit: spade Location: shuffled Card value: 10
+Card 39:
+Rank: four Suit: diamond Location: shuffled Card value: 4
+Card 40:
+Rank: ace Suit: club Location: shuffled Card value: 11
+Card 41:
+Rank: queen Suit: diamond Location: shuffled Card value: 10
+Card 42:
+Rank: eight Suit: heart Location: shuffled Card value: 8
+Card 43:
+Rank: jack Suit: club Location: shuffled Card value: 10
+Card 44:
+Rank: three Suit: club Location: shuffled Card value: 3
+Card 45:
+Rank: jack Suit: diamond Location: shuffled Card value: 10
+Card 46:
+Rank: five Suit: club Location: shuffled Card value: 5
+Card 47:
+Rank: king Suit: heart Location: shuffled Card value: 10
+Card 48:
+Rank: ace Suit: heart Location: shuffled Card value: 11
+Card 49:
+Rank: eight Suit: diamond Location: shuffled Card value: 8
+Card 50:
+Rank: eight Suit: spade Location: shuffled Card value: 8
+Card 51:
+Rank: seven Suit: club Location: shuffled Card value: 7
+Card 52:
+Rank: nine Suit: diamond Location: shuffled Card value: 9
+
+Returning to main menu...
+
+Select an option:
+
+<1> Shuffle cards
+<2> Display unshuffled deck
+<3> Display shuffled deck
+<4> Deal cards
+<5> Quit card game program
+
+Enter your selection: 4
+
+The cards have been dealt. Select an option: 
+
+<1> Display players
+<2> Display discard and stock piles
+<3> Return to main menu
+
+Enter your selection: 1
+
+The players are: 
+
+Player 1:
+Name: Patrick Austin Total: 25
+Patrick Austin's hand card 1:
+Rank: nine Suit: spade Location: Patrick Austin Card value: 9
+Patrick Austin's hand card 2:
+Rank: ace Suit: spade Location: Patrick Austin Card value: 11
+Patrick Austin's hand card 3:
+Rank: five Suit: heart Location: Patrick Austin Card value: 5
+Player 2:
+Name: Nancy LaTourrette Total: 12
+Nancy LaTourrette's hand card 1:
+Rank: six Suit: spade Location: Nancy LaTourrette Card value: 6
+Nancy LaTourrette's hand card 2:
+Rank: three Suit: diamond Location: Nancy LaTourrette Card value: 3
+Nancy LaTourrette's hand card 3:
+Rank: three Suit: spade Location: Nancy LaTourrette Card value: 3
+Player 3:
+Name: Sam Tregillus Total: 20
+Sam Tregillus's hand card 1:
+Rank: four Suit: spade Location: Sam Tregillus Card value: 4
+Sam Tregillus's hand card 2:
+Rank: six Suit: heart Location: Sam Tregillus Card value: 6
+Sam Tregillus's hand card 3:
+Rank: queen Suit: spade Location: Sam Tregillus Card value: 10
+Player 4:
+Name: Prasun Dey Total: 19
+Prasun Dey's hand card 1:
+Rank: two Suit: diamond Location: Prasun Dey Card value: 2
+Prasun Dey's hand card 2:
+Rank: seven Suit: spade Location: Prasun Dey Card value: 7
+Prasun Dey's hand card 3:
+Rank: ten Suit: diamond Location: Prasun Dey Card value: 10
+Player 5:
+Name: Austin Sanders Total: 23
+Austin Sanders's hand card 1:
+Rank: five Suit: diamond Location: Austin Sanders Card value: 5
+Austin Sanders's hand card 2:
+Rank: eight Suit: club Location: Austin Sanders Card value: 8
+Austin Sanders's hand card 3:
+Rank: king Suit: diamond Location: Austin Sanders Card value: 10
+Player 6:
+Name: George Bebis Total: 23
+George Bebis's hand card 1:
+Rank: ace Suit: diamond Location: George Bebis Card value: 11
+George Bebis's hand card 2:
+Rank: two Suit: club Location: George Bebis Card value: 2
+George Bebis's hand card 3:
+Rank: jack Suit: heart Location: George Bebis Card value: 10
+Player 7:
+Name: John Doe Total: 24
+John Doe's hand card 1:
+Rank: queen Suit: heart Location: John Doe Card value: 10
+John Doe's hand card 2:
+Rank: ten Suit: club Location: John Doe Card value: 10
+John Doe's hand card 3:
+Rank: four Suit: heart Location: John Doe Card value: 4
+Player 8:
+Name: Richard Panini Total: 22
+Richard Panini's hand card 1:
+Rank: king Suit: club Location: Richard Panini Card value: 10
+Richard Panini's hand card 2:
+Rank: three Suit: heart Location: Richard Panini Card value: 3
+Richard Panini's hand card 3:
+Rank: nine Suit: heart Location: Richard Panini Card value: 9
+
+Returning to deal menu...
+
+The cards have been dealt. Select an option: 
+
+<1> Display players
+<2> Display discard and stock piles
+<3> Return to main menu
+
+Enter your selection: 2
+
+The discard pile contains: 
+
+Card 1: 
+Rank: nine Suit: club Location: discard Card value: 9
+
+The stock pile contains: 
+
+Card 1:
+Rank: seven Suit: diamond Location: stock Card value: 7
+Card 2:
+Rank: six Suit: club Location: stock Card value: 6
+Card 3:
+Rank: six Suit: diamond Location: stock Card value: 6
+Card 4:
+Rank: two Suit: spade Location: stock Card value: 2
+Card 5:
+Rank: queen Suit: club Location: stock Card value: 10
+Card 6:
+Rank: seven Suit: heart Location: stock Card value: 7
+Card 7:
+Rank: five Suit: spade Location: stock Card value: 5
+Card 8:
+Rank: four Suit: club Location: stock Card value: 4
+Card 9:
+Rank: two Suit: heart Location: stock Card value: 2
+Card 10:
+Rank: king Suit: spade Location: stock Card value: 10
+Card 11:
+Rank: ten Suit: heart Location: stock Card value: 10
+Card 12:
+Rank: jack Suit: spade Location: stock Card value: 10
+Card 13:
+Rank: ten Suit: spade Location: stock Card value: 10
+Card 14:
+Rank: four Suit: diamond Location: stock Card value: 4
+Card 15:
+Rank: ace Suit: club Location: stock Card value: 11
+Card 16:
+Rank: queen Suit: diamond Location: stock Card value: 10
+Card 17:
+Rank: eight Suit: heart Location: stock Card value: 8
+Card 18:
+Rank: jack Suit: club Location: stock Card value: 10
+Card 19:
+Rank: three Suit: club Location: stock Card value: 3
+Card 20:
+Rank: jack Suit: diamond Location: stock Card value: 10
+Card 21:
+Rank: five Suit: club Location: stock Card value: 5
+Card 22:
+Rank: king Suit: heart Location: stock Card value: 10
+Card 23:
+Rank: ace Suit: heart Location: stock Card value: 11
+Card 24:
+Rank: eight Suit: diamond Location: stock Card value: 8
+Card 25:
+Rank: eight Suit: spade Location: stock Card value: 8
+Card 26:
+Rank: seven Suit: club Location: stock Card value: 7
+Card 27:
+Rank: nine Suit: diamond Location: stock Card value: 9
+
+Returning to deal menu...
+
+The cards have been dealt. Select an option: 
+
+<1> Display players
+<2> Display discard and stock piles
+<3> Return to main menu
+
+Enter your selection: 3
+
+Returning to main menu...
+
+Select an option:
+
+<1> Shuffle cards
+<2> Display unshuffled deck
+<3> Display shuffled deck
+<4> Deal cards
+<5> Quit card game program
+
+Enter your selection: 5
+
+Thank you for using the card game program. Press any key to quit: a
+]0;patrick@patrick-VirtualBox: ~/Desktop/Project_6patrick@patrick-VirtualBox:~/Desktop/Project_6$ exit
+Script done on Wed 15 Oct 2014 11:24:07 AM PDT

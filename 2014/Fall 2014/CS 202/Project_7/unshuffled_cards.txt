@@ -1,0 +1,4 @@
+heart two 2 heart three 3 heart four 4 heart five 5 heart six 6 heart seven 7 heart eight 8 heart nine 9 heart ten 10 heart jack 10 heart queen 10 heart king 10 heart ace 11
+diamond two 2 diamond three 3 diamond four 4 diamond five 5 diamond six 6 diamond seven 7 diamond eight 8 diamond nine 9 diamond ten 10  diamond jack 10 diamond queen 10 diamond king 10 diamond ace 11
+club two 2 club three 3 club four 4 club five 5 club six 6 club seven 7 club eight 8 club nine 9 club ten 10 club jack 10 club queen 10 club king 10 club ace 11
+spade two 2 spade three 3 spade four 4 spade five 5 spade six 6 spade seven 7 spade eight 8 spade nine 9 spade ten 10 spade jack 10 spade queen 10 spade king 10 spade ace 11

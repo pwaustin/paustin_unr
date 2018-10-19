@@ -1,0 +1,137 @@
+\hypertarget{classcounting_sort}{\section{counting\-Sort Class Reference}
+\label{classcounting_sort}\index{counting\-Sort@{counting\-Sort}}
+}
+
+
+{\ttfamily \#include $<$sorts.\-h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classcounting_sort_a765c9bbee52db5be483ca42178b63a82}{counting\-Sort} ()
+\item 
+void \hyperlink{classcounting_sort_a04a7bbedd759394d5bcf008a1d0dfbb5}{sort} (const int \&)
+\item 
+void \hyperlink{classcounting_sort_a4a5d310e57794a0f2a1145531ed9216f}{readin} (const int \&)
+\item 
+double \hyperlink{classcounting_sort_a490e2ceab26c7010d143184c9ca20d27}{get\-Time} () const 
+\item 
+int \hyperlink{classcounting_sort_a634e63727581f730636355af45f50c7b}{get\-Comparisons} () const 
+\item 
+int \hyperlink{classcounting_sort_a99cf12e66610098af74032be9e50ce3f}{get\-Swaps} () const 
+\item 
+void \hyperlink{classcounting_sort_a184dc7ab6110ed9423ec8f2deac25d90}{reset\-Counts} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classcounting_sort_a765c9bbee52db5be483ca42178b63a82}{\index{counting\-Sort@{counting\-Sort}!counting\-Sort@{counting\-Sort}}
+\index{counting\-Sort@{counting\-Sort}!countingSort@{counting\-Sort}}
+\subsubsection[{counting\-Sort}]{\setlength{\rightskip}{0pt plus 5cm}counting\-Sort\-::counting\-Sort (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classcounting_sort_a765c9bbee52db5be483ca42178b63a82}
+Counting sort class constructor. Initializes count and time analysis values to 0. \begin{DoxyPrecond}{Precondition}
+None. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Object created with time, comparisons, swaps = 0 
+\end{DoxyPostcond}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classcounting_sort_a634e63727581f730636355af45f50c7b}{\index{counting\-Sort@{counting\-Sort}!get\-Comparisons@{get\-Comparisons}}
+\index{get\-Comparisons@{get\-Comparisons}!countingSort@{counting\-Sort}}
+\subsubsection[{get\-Comparisons}]{\setlength{\rightskip}{0pt plus 5cm}int counting\-Sort\-::get\-Comparisons (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classcounting_sort_a634e63727581f730636355af45f50c7b}
+Counting sort get\-Comparisons function. Returns comparisons data member, tracking number of comparisons carried out during sorting. Always returns 0, counting sort does no comparisons. \begin{DoxyPrecond}{Precondition}
+None. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Comparisons returned; value unchanged. 
+\end{DoxyPostcond}
+\hypertarget{classcounting_sort_a99cf12e66610098af74032be9e50ce3f}{\index{counting\-Sort@{counting\-Sort}!get\-Swaps@{get\-Swaps}}
+\index{get\-Swaps@{get\-Swaps}!countingSort@{counting\-Sort}}
+\subsubsection[{get\-Swaps}]{\setlength{\rightskip}{0pt plus 5cm}int counting\-Sort\-::get\-Swaps (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classcounting_sort_a99cf12e66610098af74032be9e50ce3f}
+Bubble sort get\-Swaps function. Returns swaps data member, tracking number of swaps carried out during sorting. Always returns 0, counting sort does not sort by swapping values per se. \begin{DoxyPrecond}{Precondition}
+None. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Swaps returned; value unchanged. 
+\end{DoxyPostcond}
+\hypertarget{classcounting_sort_a490e2ceab26c7010d143184c9ca20d27}{\index{counting\-Sort@{counting\-Sort}!get\-Time@{get\-Time}}
+\index{get\-Time@{get\-Time}!countingSort@{counting\-Sort}}
+\subsubsection[{get\-Time}]{\setlength{\rightskip}{0pt plus 5cm}double counting\-Sort\-::get\-Time (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classcounting_sort_a490e2ceab26c7010d143184c9ca20d27}
+Counting sort get\-Time function. Returns time data member, used to track time spent sorting. \begin{DoxyPrecond}{Precondition}
+None. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Time returned; value unchanged. 
+\end{DoxyPostcond}
+\hypertarget{classcounting_sort_a4a5d310e57794a0f2a1145531ed9216f}{\index{counting\-Sort@{counting\-Sort}!readin@{readin}}
+\index{readin@{readin}!countingSort@{counting\-Sort}}
+\subsubsection[{readin}]{\setlength{\rightskip}{0pt plus 5cm}void counting\-Sort\-::readin (
+\begin{DoxyParamCaption}
+\item[{const int \&}]{size}
+\end{DoxyParamCaption}
+)}}\label{classcounting_sort_a4a5d310e57794a0f2a1145531ed9216f}
+Counting sort readin function. Reads in random data of specified size to sort. \begin{DoxyPrecond}{Precondition}
+Extant and correctly formatted text files 1000.\-txt, 10000.\-txt, 100000.\-txt, 1000000.\-txt, size paramter = 1000, 10000, 100000, 1000000 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Countingsort array filled with read in values from 0 to size 
+\end{DoxyPostcond}
+
+\begin{DoxyParams}{Parameters}
+{\em size} & The size of the data to be read in. Only sizes of 1000, 10000, 100000, and 1000000 are supported in this implementation! \\
+\hline
+\end{DoxyParams}
+\hypertarget{classcounting_sort_a184dc7ab6110ed9423ec8f2deac25d90}{\index{counting\-Sort@{counting\-Sort}!reset\-Counts@{reset\-Counts}}
+\index{reset\-Counts@{reset\-Counts}!countingSort@{counting\-Sort}}
+\subsubsection[{reset\-Counts}]{\setlength{\rightskip}{0pt plus 5cm}void counting\-Sort\-::reset\-Counts (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classcounting_sort_a184dc7ab6110ed9423ec8f2deac25d90}
+Counting sort reset\-Counts function. Resets time, comparisons, and swaps values to 0 if user wishes to reset the tracking of the sorting algorithm that has happened so far. \begin{DoxyPrecond}{Precondition}
+None. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Time, comparisons, swaps set to 0. 
+\end{DoxyPostcond}
+\hypertarget{classcounting_sort_a04a7bbedd759394d5bcf008a1d0dfbb5}{\index{counting\-Sort@{counting\-Sort}!sort@{sort}}
+\index{sort@{sort}!countingSort@{counting\-Sort}}
+\subsubsection[{sort}]{\setlength{\rightskip}{0pt plus 5cm}void counting\-Sort\-::sort (
+\begin{DoxyParamCaption}
+\item[{const int \&}]{size}
+\end{DoxyParamCaption}
+)}}\label{classcounting_sort_a04a7bbedd759394d5bcf008a1d0dfbb5}
+Counting sort sort function. Sorts values in arr data member from 0 to size into ascending order using counting sort. Tracks time of operation, number of comparisons, number of swaps. Time operation coded in Linux. !!! A\-D\-A\-P\-T\-E\-D F\-R\-O\-M P\-O\-W\-E\-R\-P\-O\-I\-N\-T S\-L\-I\-D\-E C\-O\-D\-E!!! \begin{DoxyPrecond}{Precondition}
+size $>$ 0 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Values sorted from 0 to size 
+\end{DoxyPostcond}
+
+\begin{DoxyParams}{Parameters}
+{\em size} & The size of the array to be sorted. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{sorts_8h}{sorts.\-h}\item 
+\hyperlink{counting_8cpp}{counting.\-cpp}\end{DoxyCompactItemize}

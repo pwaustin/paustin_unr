@@ -1,0 +1,157 @@
+\hypertarget{class_employee_container}{\section{Employee\-Container Class Reference}
+\label{class_employee_container}\index{Employee\-Container@{Employee\-Container}}
+}
+
+
+{\ttfamily \#include $<$project1.\-h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{class_employee_container_a3d50b73c62d47851a1c49f99eed8704e}{get\-Num\-Employees} ()
+\item 
+double \hyperlink{class_employee_container_a3100d9a1397ed206181f2a6932aaedf7}{get\-Avg\-Salary} ()
+\item 
+int \hyperlink{class_employee_container_a54693c873110e1b456d2a24fae79bd1f}{get\-Avg\-Age} ()
+\item 
+void \hyperlink{class_employee_container_a05f29d7d09f7196c8952165d282bdf25}{sort\-By\-I\-D} ()
+\item 
+bool \hyperlink{class_employee_container_a19b7afffbd082baed7a547eae5d85677}{add\-Employee} (\hyperlink{class_employee}{Employee} target\-Employee)
+\item 
+bool \hyperlink{class_employee_container_afb7e8fc9abb3c180a2eb77b2e1d684eb}{export\-Employee\-Data} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_employee_container_a19b7afffbd082baed7a547eae5d85677}{\index{Employee\-Container@{Employee\-Container}!add\-Employee@{add\-Employee}}
+\index{add\-Employee@{add\-Employee}!EmployeeContainer@{Employee\-Container}}
+\subsubsection[{add\-Employee}]{\setlength{\rightskip}{0pt plus 5cm}bool Employee\-Container\-::add\-Employee (
+\begin{DoxyParamCaption}
+\item[{{\bf Employee}}]{target\-Employee}
+\end{DoxyParamCaption}
+)}}\label{class_employee_container_a19b7afffbd082baed7a547eae5d85677}
+Attempts to add a new employee object to the first empty element of the \hyperlink{class_employee_container}{Employee\-Container}. 
+\begin{DoxyParams}{Parameters}
+{\em target\-Employee} & The employee to be stored. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Precondition}
+None. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+If successful, the new\-Employee object will be stored in the first empty element of the container and num\-Employees will be incremented by 1. Otherwise, the container is unchanged and num\-Employees remains the same. 
+\end{DoxyPostcond}
+\begin{DoxyReturn}{Returns}
+True if the addition was successful, or false otherwise (eg if the container was full). 
+\end{DoxyReturn}
+\hypertarget{class_employee_container_afb7e8fc9abb3c180a2eb77b2e1d684eb}{\index{Employee\-Container@{Employee\-Container}!export\-Employee\-Data@{export\-Employee\-Data}}
+\index{export\-Employee\-Data@{export\-Employee\-Data}!EmployeeContainer@{Employee\-Container}}
+\subsubsection[{export\-Employee\-Data}]{\setlength{\rightskip}{0pt plus 5cm}bool Employee\-Container\-::export\-Employee\-Data (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_employee_container_afb7e8fc9abb3c180a2eb77b2e1d684eb}
+Prints stored employee information to console from the first stored element to the last. Note that if the data has been previously sorted, this will print employee's data to the console in order of ascending employee\-I\-D. If the data has not been sorted, employee data will be printed in the order in which it was entered into the container. In other words, in order to print sorted data, use the sort\-By\-I\-D method before this one. 
+\begin{DoxyParams}{Parameters}
+{\em None.} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Precondition}
+None. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+If successful, the information will be printed to the console. Otherwise, nothing will be printed. 
+\end{DoxyPostcond}
+\begin{DoxyReturn}{Returns}
+True if data was printed, or false otherwise (eg if the container was empty and there was nothing to print). 
+\end{DoxyReturn}
+\hypertarget{class_employee_container_a54693c873110e1b456d2a24fae79bd1f}{\index{Employee\-Container@{Employee\-Container}!get\-Avg\-Age@{get\-Avg\-Age}}
+\index{get\-Avg\-Age@{get\-Avg\-Age}!EmployeeContainer@{Employee\-Container}}
+\subsubsection[{get\-Avg\-Age}]{\setlength{\rightskip}{0pt plus 5cm}int Employee\-Container\-::get\-Avg\-Age (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_employee_container_a54693c873110e1b456d2a24fae79bd1f}
+Calculates the average age of the employee objects stored in the \hyperlink{class_employee_container}{Employee\-Container}. 
+\begin{DoxyParams}{Parameters}
+{\em None.} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Precondition}
+None. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+The calculated age will be returned by the function. If the container is empty, the function will return -\/1. 
+\end{DoxyPostcond}
+\begin{DoxyReturn}{Returns}
+The calculated average of the ages of the employees stored in the \hyperlink{class_employee_container}{Employee\-Container}, or -\/1 if the container is empty. 
+\end{DoxyReturn}
+\hypertarget{class_employee_container_a3100d9a1397ed206181f2a6932aaedf7}{\index{Employee\-Container@{Employee\-Container}!get\-Avg\-Salary@{get\-Avg\-Salary}}
+\index{get\-Avg\-Salary@{get\-Avg\-Salary}!EmployeeContainer@{Employee\-Container}}
+\subsubsection[{get\-Avg\-Salary}]{\setlength{\rightskip}{0pt plus 5cm}double Employee\-Container\-::get\-Avg\-Salary (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_employee_container_a3100d9a1397ed206181f2a6932aaedf7}
+Calculates the average of the salaries of the employee objects stored in the \hyperlink{class_employee_container}{Employee\-Container}. 
+\begin{DoxyParams}{Parameters}
+{\em None.} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Precondition}
+None. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+The calculated value will be returned by the function. If the container is empty, the function will return -\/1. 
+\end{DoxyPostcond}
+\begin{DoxyReturn}{Returns}
+The calculated average of the employee salaries stored in the \hyperlink{class_employee_container}{Employee\-Container}, or -\/1 if the container is empty. 
+\end{DoxyReturn}
+\hypertarget{class_employee_container_a3d50b73c62d47851a1c49f99eed8704e}{\index{Employee\-Container@{Employee\-Container}!get\-Num\-Employees@{get\-Num\-Employees}}
+\index{get\-Num\-Employees@{get\-Num\-Employees}!EmployeeContainer@{Employee\-Container}}
+\subsubsection[{get\-Num\-Employees}]{\setlength{\rightskip}{0pt plus 5cm}int Employee\-Container\-::get\-Num\-Employees (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_employee_container_a3d50b73c62d47851a1c49f99eed8704e}
+Returns the number of employee objects stored in the \hyperlink{class_employee_container}{Employee\-Container}. 
+\begin{DoxyParams}{Parameters}
+{\em None.} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Precondition}
+None. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+The stored int in the num\-Employees data member will be returned by the function. If the container is empty, the function will return 0. 
+\end{DoxyPostcond}
+\begin{DoxyReturn}{Returns}
+Int stored in num\-Employees data member. 
+\end{DoxyReturn}
+\hypertarget{class_employee_container_a05f29d7d09f7196c8952165d282bdf25}{\index{Employee\-Container@{Employee\-Container}!sort\-By\-I\-D@{sort\-By\-I\-D}}
+\index{sort\-By\-I\-D@{sort\-By\-I\-D}!EmployeeContainer@{Employee\-Container}}
+\subsubsection[{sort\-By\-I\-D}]{\setlength{\rightskip}{0pt plus 5cm}void Employee\-Container\-::sort\-By\-I\-D (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_employee_container_a05f29d7d09f7196c8952165d282bdf25}
+Sorts the employees within the \hyperlink{class_employee_container}{Employee\-Container} in ascending order of employee\-I\-D in subsequent elements of the container (ie employee with the lowest employee\-I\-D in the first element, employee with the highest employee\-I\-D in the final used element). 
+\begin{DoxyParams}{Parameters}
+{\em None.} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Precondition}
+None. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+The employees will be sorted within the \hyperlink{class_employee_container}{Employee\-Container}. If the number of employees is less than or equal to 1, no sorting can be done and no action will be performed. 
+\end{DoxyPostcond}
+\begin{DoxyReturn}{Returns}
+None. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{project1_8h}{project1.\-h}\item 
+\hyperlink{project1_8cpp}{project1.\-cpp}\end{DoxyCompactItemize}

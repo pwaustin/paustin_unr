@@ -1,0 +1,8 @@
+Sim Type,Sim Data Structure,Sim Size,Iterations,Sim Time,Processing Time,Avg Wait Time,Max Wait Time,Avg Line Length,Max Line Length,Teller 1 Idle Time,Teller 2 Idle Time,Teller 3 Idle Time,
+1 Teller/1 Queue,Array Based,100000,10,40.9472,5049250,2.4767e+06,4949233,4905.08,98037,0,
+3 Teller/3 Queue,Array Based,100000,10,28.6242,1685563,792184,1585522,1566.61,31355,862,1,6574,
+3 Teller/1 Queue,Array Based,100000,10,40.7308,1683113,7.9218e+06,1583045,4706.63,94071,0,30,57,
+Sim Type,Sim Data Structure,Sim Size,Iterations,Sim Time,Processing Time,Avg Wait Time,Max Wait Time,Avg Line Length,Max Line Length,Teller 1 Idle Time,Teller 2 Idle Time,Teller 3 Idle Time,
+1 Teller/1 Queue,Node Based,100000,10,0.0305033,5049250,2.4767e+06,4949233,4905.08,98037,0,
+3 Teller/3 Queue,Node Based,100000,10,0.0382818,1685563,792184,1585522,1566.61,31355,862,1,6574,
+3 Teller/1 Queue,Node Based,100000,10,0.0363859,1683113,7.9218e+06,1583045,4706.63,94071,0,30,57,

@@ -1,0 +1,6 @@
+Alpha,	Foxtrot
+Hotel,	India
+Bravo,	Alpha
+Foxtrot,	Juliette
+India,	Echo
+

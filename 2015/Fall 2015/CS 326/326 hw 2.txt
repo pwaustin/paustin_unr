@@ -1,0 +1,198 @@
+;CS326 Homework #2
+;Patrick Austin 9/19/2015
+
+
+
+;Problem 1
+
+( define ( member? x L )										;returns #t if list L contains member x and #f if not. Supporting function used throughout problem 1
+
+	( cond
+
+		( ( null? L ) #f )									;if empty list reached, x was not found, return #f
+
+		( ( equal? x ( car L ) ) #t )								;if item matching x found in L, return #t
+
+		( else 
+	
+			( member? x ( cdr L ) ) ) ) )							;otherwise, search again in cdr of L
+
+;a.
+
+( define ( is-set? L ) 											;returns T if list L is a set and F if not. Uses member? function
+
+	( cond
+
+		( ( null? L ) #t ) 									;if empty list reached, no duplicates found, return #t
+
+		( else
+
+			( if ( member? ( car L ) ( cdr L ) ) #f 					;if first item of L exists in rest of L, there is a duplicate, return #f
+ 
+			( is-set? ( cdr L ) ) ) ) ) ) 							;otherwise, check the remainder of the list for duplicates
+
+
+;b.
+
+( define ( make-set L ) 										;returns a set made from list L. Uses is-set? and member? functions
+
+	( cond
+
+		( ( is-set? L ) L ) 									;if the list is a set, just return the list
+
+		( else
+
+			( if ( member? ( car L ) ( cdr L ) ) ( make-set ( cdr L ) ) 			;if the first item in L has a duplicate elsewhere in L, repeat make-set without it
+
+			( cons ( car L ) ( make-set ( cdr L ) ) ) ) ) ) )				;otherwise, cons the first item and the make-set of the remaining items together
+
+
+;c.
+
+( define ( subset? A S )										;returns #t if set A is a subset of set S and #f if not. Uses member? function. Assumes A and S are both valid sets
+
+	( cond
+
+		( ( null? A ) #t )									;if the end of A is reached, it is a subset of S, return #t
+		
+
+		( else
+			
+			( if ( member? ( car A ) S ) ( subset? ( cdr A ) S ) 				;if car of A is contained in S, see if cdr of A is a subset of S
+
+			#f ) ) ) )									;otherwise, an item in A was not in S, so A is not a subset of S, return #f
+
+			
+;d.
+
+( define ( union A B )											;returns a set which is the union of sets A and B. Uses member? function. Assumes A and B are both valid sets
+
+	( cond
+
+		( ( null? A ) B )									;if the end of A is reached, return B
+
+		( else
+
+			( if ( member? ( car A ) B ) ( union ( cdr A ) B )				;if B already contains A, don't include it in B again- repeat union operation for cdr of A
+
+			( cons ( car A ) ( union ( cdr A ) B ) ) ) ) ) ) 				;otherwise, add car of A to B and repeat union operation for cdr of A
+
+														
+;e.
+
+( define ( intersection A B )										;returns a set which is the intersection of sets A and B. Uses member? function. Assumes A and B are both valid sets
+
+	( cond
+
+		( ( null? A ) '() )									;if A is the null set, the intersection is the null set - return the null set
+
+		( else 
+
+			( if ( member? ( car A ) B ) 							;if car of A is a member of B...
+
+				( cons ( car A ) ( intersection ( cdr A ) B ) )				;then return cons of car A with the intersection of cdr A and B
+
+			( intersection ( cdr A ) B ) ) ) ) )						;otherwise, car of A is not a member of B - return intersection of cdr A with B
+
+
+
+;Problem 2
+
+
+( define T
+	'(13
+		(5
+			(1 () ())
+			(8 ()
+				(9 () ())))
+		(22
+			(17 () ())
+			(25 () ()))))
+
+
+( define ( val T ) ( car T ) )										;provides root of specified tree
+
+( define ( left T ) ( car ( cdr T ) ) )									;provides left subtree of specified tree
+
+( define ( right T ) ( car ( cdr ( cdr T ) ) ) )							;provides right subtree of specified tree
+
+
+;a.
+
+( define ( tree-member? v T )										;returns #t if the tree contains value V and #f if not
+
+	( cond
+
+		( ( null? T ) #f )									;if bottom of the tree reached, value not found, return #f
+
+		( else
+
+			( if ( equal? v (val T) ) #t							;if node reached with specified value, return #t
+
+			( or ( tree-member? v ( left T ) ) ( tree-member? v ( right T ) ) ) ) ) ) )	;otherwise, search the left and right subtrees for the value and return the or of the results 
+
+
+;b.
+
+( define ( preorder T )											;returns list of tree elements corresponding to preorder traversal (root, left, right)
+
+	( cond
+
+		( ( null? T ) T )									;if bottom of tree reached, no value found, print T (ie nothing)
+
+		( else
+
+			( append ( list ( val T ) ) 							;otherwise, use append to print the preorder list. Start with list of root (append needs a list not a value)
+				 ( preorder ( left T ) ) 						;then recursive preorder printout of left subtree
+				 ( preorder ( right T ) ) ) ) ) )					;then recursive preorder printout of right subtree
+
+
+;c.
+
+( define ( inorder T )											;returns list of tree elements corresponding to inorder traversal (left, root, right)
+			
+	( cond
+
+		( ( null? T ) T )									;if bottom of tree reached, no value found, print T (ie nothing)
+
+		( else
+
+			( append ( inorder ( left T ) )							;otherwise, use append to print the inorder list. Start with recursive inorder printout of left subtree
+				 ( list ( val T ) )							;then list of root (append needs a list not a value)
+				 ( inorder ( right T ) ) ) ) ) )					;then recursive inorder printout of right subtree
+
+
+
+;Problem 3
+
+( define ( deep-delete v L )										;deletes value v from list L and any sublists of list L
+
+	( cond 
+
+		( ( null? L ) L )									;if null list, return null list
+
+		( ( list? (car L ) ) ( cons (deep-delete v (car L) ) ( deep-delete v (cdr L) ) ) )	;if sublist encountered at car of list, cons deep delete in sublist and deep delete in rest of list
+
+		( else
+
+			( if ( equal? v ( car L ) ) ( deep-delete v ( cdr L) )				;if target value found at car of list, repeat deep delete operation with that value excluded from the list
+
+			
+			(cons ( car L) ( deep-delete v ( cdr L ) ) ) ) ) ) )				;otherwise, cons car of list with deep delete operation on cdr of list
+
+
+
+;Problem 4
+
+( define ( insert-bst v T )										;inserts value v into BST T as per BST rules and returns new tree. Assumes v does not already exist in the tree
+
+	( cond
+
+		( (null? T ) (list v '() '() ) )							;if null tree, spot for v has been found- return subtree consisting of v and two empty nodes
+
+		( ( < v ( val T ) ) ( list ( val T ) ( insert-bst v ( left T ) ) ( right T ) ) )	;if v < root, insert left while returning list of subtrees
+
+		( else
+
+			 ( list ( val T ) ( left T ) ( insert-bst v ( right T ) ) ) ) ) )		;otherwise, v > root, insert right while returning list of subtrees
+

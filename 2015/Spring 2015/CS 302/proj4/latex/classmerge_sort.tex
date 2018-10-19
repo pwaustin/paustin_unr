@@ -1,0 +1,192 @@
+\hypertarget{classmerge_sort}{\section{merge\-Sort Class Reference}
+\label{classmerge_sort}\index{merge\-Sort@{merge\-Sort}}
+}
+
+
+{\ttfamily \#include $<$sorts.\-h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmerge_sort_a2c4715c8129ddb36b392cfbf392f62c0}{merge\-Sort} ()
+\item 
+void \hyperlink{classmerge_sort_aea5ca144ff59eae0f6d4cda0d6c53b3c}{time\-Sort} (const int \&, const int \&)
+\item 
+void \hyperlink{classmerge_sort_a9188f7708c3dba725f2f4083603286ac}{sort} (const int \&, const int \&)
+\item 
+void \hyperlink{classmerge_sort_a2657fef0f4c1fa9e1af1a2bbc8692520}{merge} (const int \&, const int \&, const int \&)
+\item 
+void \hyperlink{classmerge_sort_af96ab30f68815527a1221eff191d0c76}{readin} (const int \&)
+\item 
+double \hyperlink{classmerge_sort_af23f05bfb424783d64be4b685a4c530a}{get\-Time} () const 
+\item 
+int \hyperlink{classmerge_sort_a50177b2d15d2377b280e46e6fed16939}{get\-Comparisons} () const 
+\item 
+int \hyperlink{classmerge_sort_a1fc0f0a0e98580b26144e66bdf6d903e}{get\-Swaps} () const 
+\item 
+void \hyperlink{classmerge_sort_a63ab0c6bc27ee43ddf550c35941ff7ec}{reset\-Counts} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classmerge_sort_a2c4715c8129ddb36b392cfbf392f62c0}{\index{merge\-Sort@{merge\-Sort}!merge\-Sort@{merge\-Sort}}
+\index{merge\-Sort@{merge\-Sort}!mergeSort@{merge\-Sort}}
+\subsubsection[{merge\-Sort}]{\setlength{\rightskip}{0pt plus 5cm}merge\-Sort\-::merge\-Sort (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classmerge_sort_a2c4715c8129ddb36b392cfbf392f62c0}
+Merge sort class constructor. Initializes count and time analysis values to 0. \begin{DoxyPrecond}{Precondition}
+None. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Object created with time, comparisons, swaps = 0 
+\end{DoxyPostcond}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classmerge_sort_a50177b2d15d2377b280e46e6fed16939}{\index{merge\-Sort@{merge\-Sort}!get\-Comparisons@{get\-Comparisons}}
+\index{get\-Comparisons@{get\-Comparisons}!mergeSort@{merge\-Sort}}
+\subsubsection[{get\-Comparisons}]{\setlength{\rightskip}{0pt plus 5cm}int merge\-Sort\-::get\-Comparisons (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classmerge_sort_a50177b2d15d2377b280e46e6fed16939}
+Merge sort get\-Comparisons function. Returns comparisons data member, tracking number of comparisons carried out during sorting. \begin{DoxyPrecond}{Precondition}
+None. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Comparisons returned; value unchanged. 
+\end{DoxyPostcond}
+\hypertarget{classmerge_sort_a1fc0f0a0e98580b26144e66bdf6d903e}{\index{merge\-Sort@{merge\-Sort}!get\-Swaps@{get\-Swaps}}
+\index{get\-Swaps@{get\-Swaps}!mergeSort@{merge\-Sort}}
+\subsubsection[{get\-Swaps}]{\setlength{\rightskip}{0pt plus 5cm}int merge\-Sort\-::get\-Swaps (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classmerge_sort_a1fc0f0a0e98580b26144e66bdf6d903e}
+Merge sort get\-Swaps function. Returns swaps data member, tracking number of swaps carried out during sorting. \begin{DoxyPrecond}{Precondition}
+None. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Swaps returned; value unchanged. 
+\end{DoxyPostcond}
+\hypertarget{classmerge_sort_af23f05bfb424783d64be4b685a4c530a}{\index{merge\-Sort@{merge\-Sort}!get\-Time@{get\-Time}}
+\index{get\-Time@{get\-Time}!mergeSort@{merge\-Sort}}
+\subsubsection[{get\-Time}]{\setlength{\rightskip}{0pt plus 5cm}double merge\-Sort\-::get\-Time (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classmerge_sort_af23f05bfb424783d64be4b685a4c530a}
+Merge sort get\-Time function. Returns time data member, used to track time spent sorting. \begin{DoxyPrecond}{Precondition}
+None. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Time returned; value unchanged. 
+\end{DoxyPostcond}
+\hypertarget{classmerge_sort_a2657fef0f4c1fa9e1af1a2bbc8692520}{\index{merge\-Sort@{merge\-Sort}!merge@{merge}}
+\index{merge@{merge}!mergeSort@{merge\-Sort}}
+\subsubsection[{merge}]{\setlength{\rightskip}{0pt plus 5cm}void merge\-Sort\-::merge (
+\begin{DoxyParamCaption}
+\item[{const int \&}]{first, }
+\item[{const int \&}]{mid, }
+\item[{const int \&}]{last}
+\end{DoxyParamCaption}
+)}}\label{classmerge_sort_a2657fef0f4c1fa9e1af1a2bbc8692520}
+Merges two sorted array segments the\-Array\mbox{[}first..mid\mbox{]} and the\-Array\mbox{[}mid+1..last\mbox{]} into one sorted array. Tracks time of operation, number of swaps, number of comparisons. There seems to be a bug in this method when run with 1000000 values where a small number of values are erroneously swapped when sorting an already sorted array. I was not able to ascertain why this happens, but even if I could I am not allowed to modify the sorting algorithm's code for this project. For 1000, 10000, and 100000 values the algorithm appears to work correctly in the specified circumstances. In order to prevent running out of memory on my system when analyzing 1 000 000 values, temp\-Array had to be changed from a static array to a dynamic one. This does not strike me as an unreasonable adaptation, but if it strikes you as unreasonable then please show mercy. !!! A\-D\-A\-P\-T\-E\-D F\-R\-O\-M T\-E\-X\-T\-B\-O\-O\-K C\-O\-D\-E !!! \begin{DoxyPrecond}{Precondition}
+first $<$= mid $<$= last. The subarrays the\-Array\mbox{[}first..mid\mbox{]} and the\-Array\mbox{[}mid+1..last\mbox{]} are each sorted in increasing order. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+arr\mbox{[}first..last\mbox{]} is sorted. 
+\end{DoxyPostcond}
+
+\begin{DoxyParams}{Parameters}
+{\em first} & The index of the beginning of the first segment in the\-Array. \\
+\hline
+{\em mid} & The index of the end of the first segment in the\-Array; mid + 1 marks the beginning of the second segment. \\
+\hline
+{\em last} & The index of the last element in the second segment in the\-Array. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+This function merges the two subarrays into a temporary array and copies the result into the original array the\-Array. 
+\end{DoxyNote}
+\hypertarget{classmerge_sort_af96ab30f68815527a1221eff191d0c76}{\index{merge\-Sort@{merge\-Sort}!readin@{readin}}
+\index{readin@{readin}!mergeSort@{merge\-Sort}}
+\subsubsection[{readin}]{\setlength{\rightskip}{0pt plus 5cm}void merge\-Sort\-::readin (
+\begin{DoxyParamCaption}
+\item[{const int \&}]{size}
+\end{DoxyParamCaption}
+)}}\label{classmerge_sort_af96ab30f68815527a1221eff191d0c76}
+Merge sort readin function. Reads in random data of specified size to sort. \begin{DoxyPrecond}{Precondition}
+Extant and correctly formatted text files 1000.\-txt, 10000.\-txt, 100000.\-txt, 1000000.\-txt, size paramter = 1000, 10000, 100000, 1000000 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Mergesort array filled with read in values from 0 to size 
+\end{DoxyPostcond}
+
+\begin{DoxyParams}{Parameters}
+{\em size} & The size of the data to be read in. Only sizes of 1000, 10000, 100000, and 1000000 are supported in this implementation! \\
+\hline
+\end{DoxyParams}
+\hypertarget{classmerge_sort_a63ab0c6bc27ee43ddf550c35941ff7ec}{\index{merge\-Sort@{merge\-Sort}!reset\-Counts@{reset\-Counts}}
+\index{reset\-Counts@{reset\-Counts}!mergeSort@{merge\-Sort}}
+\subsubsection[{reset\-Counts}]{\setlength{\rightskip}{0pt plus 5cm}void merge\-Sort\-::reset\-Counts (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classmerge_sort_a63ab0c6bc27ee43ddf550c35941ff7ec}
+Merge sort reset\-Counts function. Resets time, comparisons, and swaps values to 0 if user wishes to reset the tracking of the sorting algorithm that has happened so far. \begin{DoxyPrecond}{Precondition}
+None. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Time, comparisons, swaps set to 0. 
+\end{DoxyPostcond}
+\hypertarget{classmerge_sort_a9188f7708c3dba725f2f4083603286ac}{\index{merge\-Sort@{merge\-Sort}!sort@{sort}}
+\index{sort@{sort}!mergeSort@{merge\-Sort}}
+\subsubsection[{sort}]{\setlength{\rightskip}{0pt plus 5cm}void merge\-Sort\-::sort (
+\begin{DoxyParamCaption}
+\item[{const int \&}]{first, }
+\item[{const int \&}]{last}
+\end{DoxyParamCaption}
+)}}\label{classmerge_sort_a9188f7708c3dba725f2f4083603286ac}
+Recursively merge sorts arr data member of \hyperlink{classmerge_sort}{merge\-Sort} class, from first element to last. Tracks time of operation, number of swaps, number of comparisons. !!! A\-D\-A\-P\-T\-E\-D F\-R\-O\-M P\-O\-W\-E\-R\-P\-O\-I\-N\-T S\-L\-I\-D\-E C\-O\-D\-E !!! \begin{DoxyPrecond}{Precondition}
+first $<$= last 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Array values\mbox{[}first..last\mbox{]} sorted into ascending order. 
+\end{DoxyPostcond}
+
+\begin{DoxyParams}{Parameters}
+{\em first} & The index of the first element to be sorted. \\
+\hline
+{\em last} & The index of the last element to be sorted. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classmerge_sort_aea5ca144ff59eae0f6d4cda0d6c53b3c}{\index{merge\-Sort@{merge\-Sort}!time\-Sort@{time\-Sort}}
+\index{time\-Sort@{time\-Sort}!mergeSort@{merge\-Sort}}
+\subsubsection[{time\-Sort}]{\setlength{\rightskip}{0pt plus 5cm}void merge\-Sort\-::time\-Sort (
+\begin{DoxyParamCaption}
+\item[{const int \&}]{first, }
+\item[{const int \&}]{last}
+\end{DoxyParamCaption}
+)}}\label{classmerge_sort_aea5ca144ff59eae0f6d4cda0d6c53b3c}
+Merge sort time\-Sort function. Sorts the values in the arr data member of the class by calling the sort function. Tracks the time the sort operation takes. Timing operation coded for Linux. \begin{DoxyPrecond}{Precondition}
+first $<$= last 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Array values \mbox{[}first..last\mbox{]} sorted into ascending order, time of operation stored in time double. data member. 
+\end{DoxyPostcond}
+
+\begin{DoxyParams}{Parameters}
+{\em first} & The index of the first element to be sorted. \\
+\hline
+{\em last} & The index of the last element to be sorted. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{sorts_8h}{sorts.\-h}\item 
+\hyperlink{merge_8cpp}{merge.\-cpp}\end{DoxyCompactItemize}

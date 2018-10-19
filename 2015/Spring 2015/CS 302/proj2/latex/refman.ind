@@ -1,0 +1,40 @@
+\begin{theindex}
+
+  \item {$\sim $ksmall}
+    \subitem {ksmall}, \hyperpage{5}
+
+  \indexspace
+
+  \item {display}
+    \subitem {ksmall}, \hyperpage{6}
+
+  \indexspace
+
+  \item {ksmall}, \hyperpage{5}
+    \subitem {$\sim $ksmall}, \hyperpage{5}
+    \subitem {display}, \hyperpage{6}
+    \subitem {ksmall}, \hyperpage{5}
+    \subitem {search}, \hyperpage{6}
+  \item {ksmall.\discretionary {-}{}{}cpp}, \hyperpage{7}
+  \item {ksmall.\discretionary {-}{}{}h}, \hyperpage{7}
+
+  \indexspace
+
+  \item {main}
+    \subitem {main.\discretionary {-}{}{}cpp}, \hyperpage{8}
+  \item {main.\discretionary {-}{}{}cpp}, \hyperpage{8}
+    \subitem {main}, \hyperpage{8}
+    \subitem {T\discretionary {-}{}{}E\discretionary {-}{}{}S\discretionary {-}{}{}T\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}S\discretionary {-}{}{}I\discretionary {-}{}{}Z\discretionary {-}{}{}E}, 
+		\hyperpage{8}
+
+  \indexspace
+
+  \item {search}
+    \subitem {ksmall}, \hyperpage{6}
+
+  \indexspace
+
+  \item {T\discretionary {-}{}{}E\discretionary {-}{}{}S\discretionary {-}{}{}T\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}S\discretionary {-}{}{}I\discretionary {-}{}{}Z\discretionary {-}{}{}E}
+    \subitem {main.\discretionary {-}{}{}cpp}, \hyperpage{8}
+
+\end{theindex}
